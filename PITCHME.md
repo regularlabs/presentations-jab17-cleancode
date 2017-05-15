@@ -420,10 +420,19 @@ for ($yi = $skip; $yi < $n_to - $endskip; $yi++)
 if ($mr >= 0) {
 	$item->css_markups['timeframe'][]
 		= $ra_css_classes[$mr];
+
 	$item->ecss_markups['timeframe'][]
-		= ' mu_ra_timeframe' . ($mu_addtext_radded ? ' mu_has_text' : '');
+		= ' mu_ra_timeframe'
+		. (
+			$mu_addtext_radded
+			? ' mu_has_text'
+			: ''
+		);
+
 	$item->title_markups['timeframe'][]
-		= $mu_addtext_radded ? $ra_timeframe_text[$mr] : '';
+		= $mu_addtext_radded
+		? $ra_timeframe_text[$mr]
+		: '';
 }
 ```
 
