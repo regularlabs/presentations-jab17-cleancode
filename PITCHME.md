@@ -48,9 +48,9 @@ Small steps to better code
 <div><code>$w</code>, <code>$h</code> => <code>$width</code>, <code>$height</code></div><!-- .element: class="fragment" -->
 <div><code>getArtAttrDb()</code> => <code>getArticleAttributesFromDatabase()</code></div><!-- .element: class="fragment" -->
 <div><code>$sp</code><!-- .element: class="fragment" -->
-<span><code>$systemPlugin</code> ???</span><!-- .element: class="fragment" -->
+<span> => <code>$systemPlugin</code> ???</span><!-- .element: class="fragment" -->
 <span><code>$serviceProvider</code> ???</span><!-- .element: class="fragment" -->
-<span><code>$spain</code> ???</span><!-- .element: class="fragment" -->
+<span><br> &nbsp; <code>$spain</code> ???</span><!-- .element: class="fragment" -->
 <span><code>$stupidPhrase</code> ???</span><!-- .element: class="fragment" -->
 </div>
 <div><br>Exceptions:</div><!-- .element: class="fragment" -->
