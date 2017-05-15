@@ -15,11 +15,13 @@
 
 ---
 
+
 ## Refactoring
 
 Small steps to better code
 
 ---
+
 
 ## Goals
 
@@ -31,6 +33,7 @@ Small steps to better code
 
 ---
 
+
 ## Goals
 
 - <span class="special">Re</span>adability
@@ -41,13 +44,15 @@ Small steps to better code
 
 ---
 
+
 ### #1 Keep your classes (and methods) small
 
 ---
 
+
 ### #2 One level of indentation
 
-```
+```php
 function doSomethingWithTheItemList($items) {
 
 	foreach ($items as $item) {
@@ -64,14 +69,30 @@ function doSomethingWithTheItemList($items) {
 
 ---
 
+
 ### #3 Do not use else
 
 - Golden path	|
+
+---
+
+I
+/\
+-  -
+/\ /\
+-  -  -  -
+/\ /\ /\ /\
+---
+
+
+### #3 Do not use else
+
+- Golden path
 - No else after return	|
 
 ---
 
-```
+```php
 function checkPublished($article) {
 
 	if ( $article->published) {
@@ -82,6 +103,7 @@ function checkPublished($article) {
 
 }
 ```
+
 ---
 
 ```php
@@ -105,7 +127,7 @@ function checkPublished($article) {
 
 ---
 
-```
+```php
 function checkPublished($article) {
 
 	if ( $article->published) {
@@ -118,7 +140,7 @@ function checkPublished($article) {
 ```
 ---
 
-```
+```php
 function checkPublished($article) {
 
 	if ( ! $article->published) {
@@ -140,7 +162,7 @@ function checkPublished($article) {
 
 ---
 
-```
+```php
 function checkAges($age1, $age2) {
 
 	if ($age1 < $age2) {
@@ -157,7 +179,7 @@ function checkAges($age1, $age2) {
 ```
 ---
 
-```
+```php
 function checkAges($age1, $age2) {
 
 	if ($age1 < $age2) {
@@ -184,7 +206,7 @@ function checkAges($age1, $age2) {
 
 ---
 
-```
+```php
 function getStatusText($status) {
 
 	if ($status == -2) {
@@ -203,7 +225,7 @@ function getStatusText($status) {
 ```
 ---
 
-```
+```php
 function getStatusText($status) {
 
 	if ($status == -2) {
@@ -225,7 +247,7 @@ function getStatusText($status) {
 
 ---
 
-```
+```php
 function getStatusText($status) {
 
 	switch ($status) {
@@ -257,33 +279,37 @@ function getStatusText($status) {
 - Defensive (negative) checks
 - Return early
 - Many else-ifs => Switches
-- Move checks to a separate method (only when making sense, when expecting multiple checks) |
+- Move checks to a separate method |
+
+---
+
+
+### #4 Do not abbreviate
+
+- `val` => `value` |
+- `` => `value` |
+
+Exceptions: |
+- `id` for identifier |
+- `x` `y` for actual axis |
 
 ---
 
 ### #4 Do not abbreviate
 
-Exceptions:
-- `id` for identifier
-
-
----
-
-### #4 Do not abbreviate
-
-```
+```php
 foreach ($items as $i => $v) {
 	echo '<p>' . $i . ': ' . $v;
 }
 ```
 <!-- .element: class="fragment" -->
-```
+```php
 foreach ($items as $key => $value) {
 	echo '<p>' . $key . ': ' . $value;
 }
 ```
 <!-- .element: class="fragment" -->
-```
+```php
 foreach ($items as $number => $name) {
 	echo '<p>' . $number . ': ' . $name;
 }
