@@ -45,3 +45,7 @@
 	text-align: center;
 	white-space: pre;
 }
+
+.reveal .align-left {
+	text-align: left;
+}
