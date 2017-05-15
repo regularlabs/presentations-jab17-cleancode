@@ -28,11 +28,11 @@ Thanks to
 
 ## Goals
 
-- <span class="color:green">Re</span>adability
-- <span class="color:blue">M</span>ore stabl<span class="color:green">e</span>
-- <span class="color:red">M</span>aintainabiliy
-- <span class="color:green">Be</span>tter testable
-- D<span class="color:green">R</span>Yer
+- <span style="color:green">Re</span>adability
+- <span style="color:blue">M</span>ore stabl<span style="color:green">e</span>
+- <span style="color:red">M</span>aintainabiliy
+- <span style="color:lightblue">Be</span>tter testable
+- D<span style="color:green">R</span>Yer
 
 ---
 
