@@ -443,7 +443,7 @@ foreach ($items as $i => $v) {
 	echo '<p>' . $i . ': ' . $v;
 }
 ```
-<!-- .element: class="fragment" -->
+
 ```php
 foreach ($items as $key => $value) {
 	echo '<p>' . $key . ': ' . $value;
