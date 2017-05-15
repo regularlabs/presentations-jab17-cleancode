@@ -76,11 +76,11 @@ function doSomethingWithTheItemList($items) {
 
 ---
 
-![IMG](assets/goldernpath_1.png)
+![IMG](assets/goldenpath_1.png)
 
 ---
 
-![IMG](assets/goldernpath_2.png)
+![IMG](assets/goldenpath_2.png)
 
 ---
 
