@@ -15,13 +15,11 @@
 
 ---
 
-
 ## Refactoring
 
 Small steps to better code
 
 ---
-
 
 ## Goals
 
@@ -33,7 +31,6 @@ Small steps to better code
 
 ---
 
-
 ## Goals
 
 - <span class="special">Re</span>adability
@@ -44,11 +41,9 @@ Small steps to better code
 
 ---
 
-
 ### #1 Keep your classes (and methods) small
 
 ---
-
 
 ### #2 One level of indentation
 
@@ -69,7 +64,6 @@ function doSomethingWithTheItemList($items) {
 
 ---
 
-
 ### #3 Do not use else
 
 - Golden path	|
@@ -84,7 +78,6 @@ function doSomethingWithTheItemList($items) {
 
 ---
 
-
 ### #3 Do not use else
 
 - Golden path
@@ -93,7 +86,7 @@ function doSomethingWithTheItemList($items) {
 ---
 
 ```php
-function checkPublished($article) {
+function getPublishedText($article) {
 
 	if ( $article->published) {
 		return 'Yes, it is published';
@@ -107,7 +100,7 @@ function checkPublished($article) {
 ---
 
 ```php
-function checkPublished($article) {
+function getPublishedText($article) {
 
 	if ( $article->published) {
 		return 'Yes, it is published';
@@ -117,92 +110,14 @@ function checkPublished($article) {
 
 }
 ```
+
 ---
 
 ### #3 Do not use else
 
 - Golden path
 - No else after return
-- Defensive (negative) checks |
-
----
-
-```php
-function checkPublished($article) {
-
-	if ( $article->published) {
-		return 'Yes, it is published';
-	}
-
-	return 'No, not published';
-
-}
-```
----
-
-```php
-function checkPublished($article) {
-
-	if ( ! $article->published) {
-		return 'No, not published';
-	}
-
-	return 'Yes, it is published';
-
-}
-```
----
-
-### #3 Do not use else
-
-- Golden path
-- No else after return
-- Defensive (negative) checks
 - Return early |
-
----
-
-```php
-function checkAges($age1, $age2) {
-
-	if ($age1 < $age2) {
-		$result = 'younger';
-	} else if ($age1 > $age2) {
-		$result = 'older';
-	}  else {
-		$result = 'same';
-	}
-
-	return $result;
-
-}
-```
----
-
-```php
-function checkAges($age1, $age2) {
-
-	if ($age1 < $age2) {
-		return 'younger';
-	}
-
-	if ($age1 > $age2) {
-		return 'older';
-	}
-
-	return 'same';
-
-}
-```
-
----
-### #3 Do not use else
-
-- Golden path
-- No else after return
-- Defensive (negative) checks
-- Return early
-- Many else-ifs => Switches |
 
 ---
 
@@ -223,6 +138,150 @@ function getStatusText($status) {
 
 }
 ```
+
+---
+
+```php
+function getStatusText($status) {
+
+	if ($status == -2) {
+		return 'Archived';
+	}
+
+	if ($status == -1) {
+		return 'Trashed';
+	}
+
+	if ($status == 0) {
+		return 'Unpublished';
+	}
+
+	return 'Published';
+
+}
+```
+
+---
+
+### #3 Do not use else
+
+- Golden path
+- No else after return
+- Return early
+- Defensive (negative) checks |
+
+---
+
+```php
+function getPublishedText($article) {
+
+	if ( $article->published) {
+		return 'Yes, it is published';
+	}
+
+	return 'No, not published';
+
+}
+```
+
+---
+
+```php
+function getPublishedText($article) {
+
+	if ( ! $article->published) {
+		return 'No, not published';
+	}
+
+	return 'Yes, it is published';
+
+}
+```
+
+---
+
+```php
+function getList() {
+
+	$items = $articles->getItems();
+
+	if ( ! empty($items)) {
+		foreach ($items as $item) {
+			// A lot of code;
+		}
+	} else {
+		throw new Exception('No items found!');
+	}
+
+}
+```
+
+---
+
+```php
+function getList() {
+
+	$items = $articles->getItems();
+
+	if ( empty($items)) {
+		throw new Exception('No items found!');
+	} else {
+		foreach ($items as $item) {
+			// A lot of code;
+		}
+	}
+
+}
+```
+
+---
+
+```php
+function getList() {
+
+	$items = $articles->getItems();
+
+	if ( empty($items)) {
+		throw new Exception('No items found!');
+	}
+
+	foreach ($items as $item) {
+		// A lot of code;
+	}
+
+}
+```
+
+---
+
+### #3 Do not use else
+
+- Golden path
+- No else after return
+- Return early
+- Defensive (negative) checks
+- Many else-ifs => Switches |
+
+---
+
+```php
+function getStatusText($status) {
+
+	if ($status == -2) {
+		$result = 'Archived';
+	} else if ($status == -1) {
+		$result = 'Trashed';
+	} else if ($status == 0) {
+		$result = 'Unpublished';
+	} else {
+		$result = 'Published';
+	}
+
+	return $result;
+
+}
+```
+
 ---
 
 ```php
@@ -276,13 +335,52 @@ function getStatusText($status) {
 
 - Golden path
 - No else after return
-- Defensive (negative) checks
 - Return early
+- Defensive (negative) checks
 - Many else-ifs => Switches
 - Move checks to a separate method |
 
 ---
 
+```php
+function getList() {
+
+	$items = $articles->getItems();
+
+	if ( empty($items)) {
+		throw new Exception('No items found!');
+	}
+
+	foreach ($items as $item) {
+		// A lot of code;
+	}
+
+}
+```
+
+---
+
+```php
+function getList() {
+
+	$items = $articles->getItems();
+
+	if ( empty($items)) {
+		throw new Exception('No items found!');
+	}
+
+	foreach ($items as $item) {
+		$this->prepareItem($item);
+	}
+
+}
+
+function prepareItem($item) {
+	// A lot of code;
+}
+```
+
+---
 
 ### #4 Do not abbreviate
 
