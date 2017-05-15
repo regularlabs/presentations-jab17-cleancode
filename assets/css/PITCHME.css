@@ -1,5 +1,5 @@
-.controls {
-    display: none;
+.reveal .controls {
+    display: none !important;
 }
 
 .reveal {
