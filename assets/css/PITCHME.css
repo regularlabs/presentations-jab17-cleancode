@@ -12,7 +12,8 @@
 }
 
 .logo {
-	padding: 20px;
+    margin: 0 -100% 20px;
+    padding: 20px 102%;
 	background-color: #fff;
 }
 .reveal .logo img {
