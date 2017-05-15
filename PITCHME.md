@@ -7,22 +7,27 @@
 
 ---
 
-## Disclaimer
+## Thanks to
 
-Thanks to
 - Jeff Bay (Object Calisthenics 2008)
 - Rafael Dohms (Object Calisthenics for PHP)
 - Jeffrey Way (Laracasts)
 
 ---
 
+## Refactoring
+
+Small steps to better code
+
+---
+
 ## Goals
 
 - Readability
-- More stable	|
+- More stable		|
 - Maintainabiliy	|
 - Better testable	|
-- DRYer	|
+- DRYer				|
 
 ---
 
@@ -36,12 +41,53 @@ Thanks to
 
 ---
 
+### #1 Keep your classes (and methods) small
 
-Here is some code:
+---
+
+### #2 One level of indentation
+
+Move sub loops into separate methods
+A single if in a foreach is ok… unless you have a better solution => array_filter
+https://laracasts.com/series/simple-rules-for-simpler-code/episodes/3?autoplay=true
+
+---
+
+### #3 Do not use else
+
+- No else after return
+- Return early
+- Defensive checks (check for negative => exceptions)
+- Golden path (main code after the checks)
+- Move checks to a separate method (only when making sense, when expecting multiple checks)
+- Many elsifs on a single variable? => Switches
+
+---
+
+### #4 Do not abbreviate
+
+Exceptions:
+- `id` for identifier
+
+
+---
+
+### #4 Do not abbreviate
 
 ```
-		if (empty($string) || empty($area))
-		{
-			return $string;
-		}
+foreach( $items as $i => $v) {
+	echo '<p>' . $i . ': ' . $v;
+}
+```
+|
+```
+foreach( $items as $key => $value) {
+	echo '<p>' . $key . ': ' . $value;
+}
+```
+|
+```
+foreach( $items as $number => $name) {
+	echo '<p>' . $number . ': ' . $name;
+}
 ```
