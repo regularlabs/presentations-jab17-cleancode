@@ -390,7 +390,7 @@ function prepareItem($item) {
 <!-- .element: class="fragment" -->
 <div><code>getAttr()</code> => <code>getAttributes()</code></div>
 <!-- .element: class="fragment" -->
-<span><code>$emc</code> =></span><!-- .element: class="fragment" --> <code>$errorMessageCode</code><!-- .element: class="fragment" -->
+<div><span><code>$emc</code> =></span><!-- .element: class="fragment" --> <code>$errorMessageCode</code><!-- .element: class="fragment" --></div>
 
 Exceptions:
 <!-- .element: class="fragment" -->
