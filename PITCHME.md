@@ -19,10 +19,10 @@ Thanks to
 ## Goals
 
 - _Re_adability
-- _M_ore stabl_e_
-- *M*aintainabiliy
-- *Be*tter testable
-- D*R*Yer
+- _M_ore stabl_e_	|
+- *M*aintainabiliy	|
+- *Be*tter testable	|
+- D*R*Yer			|
 
 ---
 
