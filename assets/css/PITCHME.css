@@ -1,9 +1,22 @@
 .reveal {
     font-size: 16px;
 }
+
 .reveal, .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
     font-family: Oxygen,Arial;
     letter-spacing: 0;
 }
-.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+
+.reveal pre {
+    font-size: 1.2em;
+}
+
+.logo {
+	padding: 20px;
+	background-color: #fff;
+}
+.reveal .logo img {
+    background: none;
+    border: none;
+    box-shadow: none;
 }
