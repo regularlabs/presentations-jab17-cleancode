@@ -385,24 +385,18 @@ function prepareItem($item) {
 ### #4 Do not abbreviate
 
 <div class="align-left">
-<div><code>$val</code> => <code>$value</code></div>
-<!-- .element: class="fragment" -->
-<div><code>$art</code> => <code>$article</code></div>
-<!-- .element: class="fragment" -->
-<div><code>getAttr()</code> => <code>getAttributes()</code></div>
-<!-- .element: class="fragment" -->
+<div><code>$val</code> => <code>$value</code></div><!-- .element: class="fragment" -->
+<div><code>$art</code> => <code>$article</code></div><!-- .element: class="fragment" -->
+<div><code>getAttr()</code> => <code>getAttributes()</code></div><!-- .element: class="fragment" -->
 <code>$sp</code><!-- .element: class="fragment" -->
 <div>=> <code>$systemPlugin</code> ???</div><!-- .element: class="fragment" -->
 <div>=> <code>$serviceProvider</code> ???</div><!-- .element: class="fragment" -->
 <div>=> <code>$spain</code> ???</div><!-- .element: class="fragment" -->
 <div>=> <code>$stupidPhrase</code> ???</div><!-- .element: class="fragment" -->
 
-Exceptions:
-<!-- .element: class="fragment" -->
-<div><code>id</code> for identifier</div>
-<!-- .element: class="fragment" -->
-<div><code>x</code>, <code>y</code> for actual axis</div>
-<!-- .element: class="fragment" -->
+<div>Exceptions:</div><!-- .element: class="fragment" -->
+<div><code>id</code> for identifier</div><!-- .element: class="fragment" -->
+<div><code>x</code>, <code>y</code> for actual axis</div><!-- .element: class="fragment" -->
 </div>
 
 ---
