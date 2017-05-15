@@ -48,10 +48,10 @@ Small steps to better code
 <div><code>$w</code>, <code>$h</code> => <code>$width</code>, <code>$height</code></div><!-- .element: class="fragment" -->
 <div><code>getArtAttrDb()</code> => <code>getArticleAttributesFromDatabase()</code></div><!-- .element: class="fragment" -->
 <code>$sp</code><!-- .element: class="fragment" -->
-<div>=> <code>$systemPlugin</code> ???</div><!-- .element: class="fragment" -->
-<div>=> <code>$serviceProvider</code> ???</div><!-- .element: class="fragment" -->
-<div>=> <code>$spain</code> ???</div><!-- .element: class="fragment" -->
-<div>=> <code>$stupidPhrase</code> ???</div><!-- .element: class="fragment" -->
+<div>   => <code>$systemPlugin</code> ???</div><!-- .element: class="fragment" -->
+<div>   => <code>$serviceProvider</code> ???</div><!-- .element: class="fragment" -->
+<div>   => <code>$spain</code> ???</div><!-- .element: class="fragment" -->
+<div>   => <code>$stupidPhrase</code> ???</div><!-- .element: class="fragment" -->
 
 <div><br />Exceptions:</div><!-- .element: class="fragment" -->
 <div><code>id</code> for identifier</div><!-- .element: class="fragment" -->
