@@ -18,8 +18,8 @@ Thanks to
 
 ## Goals
 
-- *Re*adability
-- *M*ore stabl*e*
+- _Re_adability
+- _M_ore stabl_e_
 - *M*aintainabiliy
 - *Be*tter testable
 - D*R*Yer
