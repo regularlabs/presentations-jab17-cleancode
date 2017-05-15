@@ -47,7 +47,6 @@ Small steps to better code
 
 ### #2 One level of indentation
 
-<section class="fragment">
 ```
 foreach ($items as $item) {
 	if( ! $item->published) {
@@ -57,7 +56,7 @@ foreach ($items as $item) {
 	$this->doSomethingWithTheItem($item);
 }
 ```
-</section>
+<!-- .element: class="fragment" -->
 
 ---
 
