@@ -10,11 +10,13 @@
 .reveal pre {
     font-size: 1em;
 }
+
 .reveal code {
 	background-color: #666;
 	border-radius: 5px;
-	padding: 5px 20px;
+	padding: 5px 10px;
 }
+
 .reveal pre code {
 	max-height: none;
 	padding: 5px 20px;
