@@ -184,9 +184,6 @@ function checkAges($age1, $age2) {
 
 ---
 
-### #3 Do not use else
-#### Switches
-
 ```
 function getStatusText($status) {
 
@@ -205,9 +202,6 @@ function getStatusText($status) {
 }
 ```
 ---
-
-### #3 Do not use else
-#### Switches
 
 ```
 function getStatusText($status) {
@@ -230,9 +224,6 @@ function getStatusText($status) {
 ```
 
 ---
-
-### #3 Do not use else
-#### Switches
 
 ```
 function getStatusText($status) {
