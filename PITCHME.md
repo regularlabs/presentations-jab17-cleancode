@@ -384,10 +384,13 @@ function prepareItem($item) {
 
 ### #4 Do not abbreviate
 
-<div><code>val</code> => <code>value</code></div>
+<div><code>$val</code> => <code>$value</code></div>
 <!-- .element: class="fragment" -->
-<div><code>val</code> => <code>value</code></div>
+<div><code>$art</code> => <code>$article</code></div>
 <!-- .element: class="fragment" -->
+<div><code>getAttr()</code> => <code>getAttributes()</code></div>
+<!-- .element: class="fragment" -->
+<code>$emc</code> =><!-- .element: class="fragment" --> <code>$errorMessageCode</code><!-- .element: class="fragment" -->
 
 Exceptions:
 <!-- .element: class="fragment" -->
