@@ -401,7 +401,33 @@ function prepareItem($item) {
 
 ---
 
-### #4 Do not abbreviate
+```php
+for ($yi = $skip; $yi < $n_to - $endskip; $yi++)
+{
+	$line = $to_lines[$yi];
+	if (($this->ychanged[$yi] = empty($xhash[$line])))
+	{
+		continue;
+	}
+	$yhash[$line] = 1;
+	$this->yv[] = $line;
+	$this->yind[] = $yi;
+}
+```
+
+---
+```php
+if ($mr >= 0) {
+	$item->css_markups['timeframe'][]
+		= $ra_css_classes[$mr];
+	$item->ecss_markups['timeframe'][]
+		= ' mu_ra_timeframe' . ($mu_addtext_radded ? ' mu_has_text' : '');
+	$item->title_markups['timeframe'][]
+		= $mu_addtext_radded ? $ra_timeframe_text[$mr] : '';
+}
+```
+
+---
 
 ```php
 foreach ($items as $i => $v) {
