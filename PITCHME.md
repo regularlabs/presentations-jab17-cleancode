@@ -47,8 +47,7 @@ Small steps to better code
 
 ### #2 One level of indentation
 
-<!-- .element: class="fragment" -->
-
+<div class="fragment">
 ```
 foreach ($items as $item) {
 	if( ! $item->published) {
@@ -58,6 +57,7 @@ foreach ($items as $item) {
 	$this->doSomethingWithTheItem($item);
 }
 ```
+</div>
 
 ---
 
@@ -82,20 +82,24 @@ Exceptions:
 
 ### #4 Do not abbreviate
 
+<div class="fragment">
 ```
 foreach ($items as $i => $v) {
 	echo '<p>' . $i . ': ' . $v;
 }
 ```
-|
+</div>
+<div class="fragment">
 ```
 foreach ($items as $key => $value) {
 	echo '<p>' . $key . ': ' . $value;
 }
 ```
-|
+</div>
+<div class="fragment">
 ```
 foreach ($items as $number => $name) {
 	echo '<p>' . $number . ': ' . $name;
 }
 ```
+</div>
