@@ -1,5 +1,5 @@
 .reveal {
-    xfont-size: 2em;
+    font-size: 2em;
 }
 
 .reveal, .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
@@ -8,6 +8,7 @@
 }
 
 .reveal pre {
+    font-size: 1.2em;
 }
 
 .reveal .logo {
