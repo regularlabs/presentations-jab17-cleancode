@@ -48,4 +48,5 @@
 
 .reveal .align-left {
 	text-align: left;
+	display: inline-block;
 }
