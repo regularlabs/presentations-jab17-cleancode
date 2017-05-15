@@ -78,7 +78,7 @@ function checkPublished($article) {
 	if ( ! $article->published) {
 		return 'No, not published';
 	} else {
-		return 'Yes, it's published';
+		return 'Yes, it is published';
 	}
 
 }
@@ -94,7 +94,7 @@ function checkPublished($article) {
 		return 'No, not published';
 	}
 
-	return 'Yes, it's published';
+	return 'Yes, it is published';
 
 }
 ```
@@ -108,7 +108,7 @@ function checkPublished($article) {
 ---
 
 ### #3 Do not use else
-## Return early
+#### Return early
 
 ```
 function checkAges($age1, $age2) {
@@ -128,7 +128,7 @@ function checkAges($age1, $age2) {
 ---
 
 ### #3 Do not use else
-## Return early
+#### Return early
 
 ```
 function checkAges($age1, $age2) {
@@ -159,7 +159,7 @@ function checkAges($age1, $age2) {
 ---
 
 ### #3 Do not use else
-## Switches
+#### Switches
 
 ```
 function getStatusText($status) {
@@ -181,7 +181,7 @@ function getStatusText($status) {
 ---
 
 ### #3 Do not use else
-## Switches
+#### Switches
 
 ```
 function getStatusText($status) {
@@ -206,7 +206,7 @@ function getStatusText($status) {
 ---
 
 ### #3 Do not use else
-## Switches
+#### Switches
 
 ```
 function getStatusText($status) {
