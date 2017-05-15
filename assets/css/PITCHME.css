@@ -22,3 +22,8 @@
     border: none;
     box-shadow: none;
 }
+
+.reveal .special {
+	    color: dodgerblue;
+    text-decoration: underline;
+}
