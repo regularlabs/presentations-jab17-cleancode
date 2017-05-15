@@ -76,15 +76,11 @@ function doSomethingWithTheItemList($items) {
 
 ---
 
-<div class="mono">
-.
-/ \
-.    .
-/ \  / \
-.    .    .    .
-/ \ / \     / \
-.  .  .  .        .  .
-</div>
+![IMG](assets/goldernpath_1.png)
+
+---
+
+![IMG](assets/goldernpath_2.png)
 
 ---
 
