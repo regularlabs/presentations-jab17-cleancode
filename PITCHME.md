@@ -18,11 +18,21 @@ Thanks to
 
 ## Goals
 
-- _Re_adability
-- _M_ore stabl_e_	|
-- *M*aintainabiliy	|
-- *Be*tter testable	|
-- D*R*Yer			|
+- Readability
+- More stable
+- Maintainabiliy
+- Better testable
+- DRYer
+
+---
+
+## Goals
+
+- **Re**adability
+- **M**ore stabl**e**
+- *M*aintainabiliy
+- *Be*tter testable
+- D*R*Yer
 
 ---
 
