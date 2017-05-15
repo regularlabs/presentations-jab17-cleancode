@@ -54,3 +54,7 @@
 	text-align: left;
 	display: inline-block;
 }
+
+.reveal .gray {
+	color: #999;
+}

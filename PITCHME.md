@@ -9,9 +9,9 @@
 
 ## Thanks to
 
-- Jeff Bay (Object Calisthenics 2008)
-- Rafael Dohms (Object Calisthenics for PHP)
-- Jeffrey Way (Laracasts)
+- Jeff Bay <span class="gray">Object Calisthenics (2008)</span>
+- Rafael Dohms <span class="gray">Object Calisthenics for PHP</span>
+- Jeffrey Way <span class="gray">Laracasts</span>
 
 ---
 
