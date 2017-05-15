@@ -16,16 +16,16 @@
 	border-radius: 5px;
 }
 
+.reveal img {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
 .reveal .logo {
     margin: 0 -100% 20px;
     padding: 20px 102%;
 	background-color: #fff;
-}
-
-.reveal .logo img {
-    background: none;
-    border: none;
-    box-shadow: none;
 }
 
 .reveal .special {
