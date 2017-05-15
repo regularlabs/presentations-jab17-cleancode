@@ -384,12 +384,12 @@ function prepareItem($item) {
 
 ### #4 Do not abbreviate
 
-- `val` => `value` |
-- `` => `value` |
+- <code>val</code> => <code>value</code> |
+- <code>val</code> => <code>value</code> |
 
 Exceptions: |
-- `id` for identifier |
-- `x` `y` for actual axis |
+- <code>id</code> for identifier |
+- <code>x</code>, <code>y</code> for actual axis |
 
 ---
 
