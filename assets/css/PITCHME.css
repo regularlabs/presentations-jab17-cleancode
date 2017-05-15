@@ -36,4 +36,5 @@
 .mono {
 	font-family: monospace;
 	text-align: center;
+	white-space: pre-wrap;
 }
