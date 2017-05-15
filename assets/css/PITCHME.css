@@ -10,6 +10,9 @@
 .reveal pre {
     font-size: 1em;
 }
+.reveal pre code {
+	max-height: none;
+}
 
 .reveal .logo {
     margin: 0 -100% 20px;
