@@ -48,12 +48,16 @@ Small steps to better code
 ### #2 One level of indentation
 
 ```
-foreach ($items as $item) {
-	if( ! $item->published) {
-		continue;
+function doSomethingWithTheItemList($items) {
+
+	foreach ($items as $item) {
+		if( ! $item->published) {
+			continue;
+		}
+
+		$this->doSomethingWithTheItem($item);
 	}
 
-	$this->doSomethingWithTheItem($item);
 }
 ```
 <!-- .element: class="fragment" -->
@@ -62,12 +66,170 @@ foreach ($items as $item) {
 
 ### #3 Do not use else
 
+- No else after return |
+
+---
+
+### #3 Do not use else
+
+```
+function checkPublished($article) {
+
+	if ( ! $article->published) {
+		return 'No, not published';
+	} else {
+		return 'Yes, it's published';
+	}
+
+}
+```
+---
+
+### #3 Do not use else
+
+```
+function checkPublished($article) {
+
+	if ( ! $article->published) {
+		return 'No, not published';
+	}
+
+	return 'Yes, it's published';
+
+}
+```
+---
+
+### #3 Do not use else
+
+- No else after return
+- Return early |
+
+---
+
+### #3 Do not use else
+## Return early
+
+```
+function checkAges($age1, $age2) {
+
+	if ($age1 < $age2) {
+		$result = 'younger';
+	} else if ($age1 > $age2) {
+		$result = 'older';
+	}  else {
+		$result = 'same';
+	}
+
+	return $result;
+
+}
+```
+---
+
+### #3 Do not use else
+## Return early
+
+```
+function checkAges($age1, $age2) {
+
+	if ($age1 < $age2) {
+		return 'younger';
+	}
+
+	if ($age1 > $age2) {
+		return 'older';
+	}
+
+	return 'same';
+
+}
+```
+
+---
+### #3 Do not use else
+
 - No else after return
 - Return early
-- Defensive checks (check for negative => exceptions)
-- Golden path (main code after the checks)
-- Move checks to a separate method (only when making sense, when expecting multiple checks)
-- Many elsifs on a single variable? => Switches
+- Defensive checks (check for negative => exceptions) |
+- Golden path (main code after the checks) |
+- Move checks to a separate method (only when making sense, when expecting multiple checks) |
+- Many else-ifs => Switches |
+
+---
+
+### #3 Do not use else
+## Switches
+
+```
+function getStatusText($status) {
+
+	if ($status == -2) {
+		$result = 'Archived';
+	} else if ($status == -1) {
+		$result = 'Trashed';
+	} else if ($status == 0) {
+		$result = 'Unpublished';
+	} esle {
+		$result = 'Published';
+	}
+
+	return $result;
+
+}
+```
+---
+
+### #3 Do not use else
+## Switches
+
+```
+function getStatusText($status) {
+
+	if ($status == -2) {
+		return 'Archived';
+	}
+
+	if ($status == -1) {
+		return 'Trashed';
+	}
+
+	if ($status == 0) {
+		return 'Unpublished';
+	}
+
+	return 'Published';
+
+}
+```
+
+---
+
+### #3 Do not use else
+## Switches
+
+```
+function getStatusText($status) {
+
+	switch ($status) {
+
+		case -2:
+			return 'Archived';
+
+		case -1:
+			return 'Trashed';
+
+		case 0:
+			return 'Unpublished';
+
+		case 1:
+		default:
+			return 'Published';
+
+	}
+
+}
+```
 
 ---
 
