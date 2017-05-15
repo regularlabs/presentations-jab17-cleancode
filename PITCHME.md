@@ -1,12 +1,7 @@
-![LOGO](https://www.regularlabs.com/images/regularlabs/logo_240.png)
+![LOGO](assets/logo.png)
 
-#### Get the word out
-<br>
-<span style="color:gray">Markdown Presentations For Everyone</span>
-<br>
-<span style="color:gray">on</span>
-<br>
-<span style="color:gray">GitHub, GitLab and Bitbucket</span>
+# Cleaning up your code
+## The low hanging fruit
 
 ---
 
