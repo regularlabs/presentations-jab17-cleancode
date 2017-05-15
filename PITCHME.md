@@ -47,9 +47,17 @@ Small steps to better code
 
 ### #2 One level of indentation
 
-Move sub loops into separate methods
-A single if in a foreach is ok… unless you have a better solution => array_filter
-https://laracasts.com/series/simple-rules-for-simpler-code/episodes/3?autoplay=true
+<!-- .element: class="fragment" -->
+
+```
+foreach ($items as $item) {
+	if( ! $item->published) {
+		continue;
+	}
+
+	$this->doSomethingWithTheItem($item);
+}
+```
 
 ---
 
@@ -75,19 +83,19 @@ Exceptions:
 ### #4 Do not abbreviate
 
 ```
-foreach( $items as $i => $v) {
+foreach ($items as $i => $v) {
 	echo '<p>' . $i . ': ' . $v;
 }
 ```
 |
 ```
-foreach( $items as $key => $value) {
+foreach ($items as $key => $value) {
 	echo '<p>' . $key . ': ' . $value;
 }
 ```
 |
 ```
-foreach( $items as $number => $name) {
+foreach ($items as $number => $name) {
 	echo '<p>' . $number . ': ' . $name;
 }
 ```
