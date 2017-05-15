@@ -47,12 +47,12 @@ Small steps to better code
 <div><code>$val</code> => <code>$value</code></div><!-- .element: class="fragment" -->
 <div><code>$w</code>, <code>$h</code> => <code>$width</code>, <code>$height</code></div><!-- .element: class="fragment" -->
 <div><code>getArtAttrDb()</code> => <code>getArticleAttributesFromDatabase()</code></div><!-- .element: class="fragment" -->
-<code>$sp</code><!-- .element: class="fragment" -->
-<div> &nbsp; => <code>$systemPlugin</code> ???</div><!-- .element: class="fragment" -->
-<div> &nbsp; => <code>$serviceProvider</code> ???</div><!-- .element: class="fragment" -->
-<div> &nbsp; => <code>$spain</code> ???</div><!-- .element: class="fragment" -->
-<div> &nbsp; => <code>$stupidPhrase</code> ???</div><!-- .element: class="fragment" -->
-
+<div><code>$sp</code><!-- .element: class="fragment" -->
+<span><code>$systemPlugin</code> ???</span><!-- .element: class="fragment" -->
+<span><code>$serviceProvider</code> ???</span><!-- .element: class="fragment" -->
+<span><code>$spain</code> ???</span><!-- .element: class="fragment" -->
+<span><code>$stupidPhrase</code> ???</span><!-- .element: class="fragment" -->
+</div>
 <div><br>Exceptions:</div><!-- .element: class="fragment" -->
 <div><code>id</code> for identifier</div><!-- .element: class="fragment" -->
 <div><code>x</code>, <code>y</code> for actual axis</div><!-- .element: class="fragment" -->
