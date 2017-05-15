@@ -41,11 +41,90 @@ Small steps to better code
 
 ---
 
-### #1 Keep your classes (and methods) small
+### #1 Do not abbreviate
+
+<div class="align-left">
+<div><code>$val</code> => <code>$value</code></div><!-- .element: class="fragment" -->
+<div><code>$w</code>, <code>$h</code> => <code>$width</code>, <code>$height</code></div><!-- .element: class="fragment" -->
+<div><code>getArtAttrDb()</code> => <code>getArticleAttributesFromDatabase()</code></div><!-- .element: class="fragment" -->
+<code>$sp</code><!-- .element: class="fragment" -->
+<div>=> <code>$systemPlugin</code> ???</div><!-- .element: class="fragment" -->
+<div>=> <code>$serviceProvider</code> ???</div><!-- .element: class="fragment" -->
+<div>=> <code>$spain</code> ???</div><!-- .element: class="fragment" -->
+<div>=> <code>$stupidPhrase</code> ???</div><!-- .element: class="fragment" -->
+
+<div><br />Exceptions:</div><!-- .element: class="fragment" -->
+<div><code>id</code> for identifier</div><!-- .element: class="fragment" -->
+<div><code>x</code>, <code>y</code> for actual axis</div><!-- .element: class="fragment" -->
+</div>
 
 ---
 
-### #2 One level of indentation
+```php
+for ($yi = $skip; $yi < $n_to - $endskip; $yi++)
+{
+	$line = $to_lines[$yi];
+	if (($this->ychanged[$yi] = empty($xhash[$line])))
+	{
+		continue;
+	}
+	$yhash[$line] = 1;
+	$this->yv[] = $line;
+	$this->yind[] = $yi;
+}
+```
+
+---
+```php
+if ($mr >= 0) {
+	$item->css_markups['timeframe'][]
+		= $ra_css_classes[$mr];
+
+	$item->ecss_markups['timeframe'][]
+		= ' mu_ra_timeframe'
+		. (
+			$mu_addtext_radded
+			? ' mu_has_text'
+			: ''
+		);
+
+	$item->title_markups['timeframe'][]
+		= $mu_addtext_radded
+		? $ra_timeframe_text[$mr]
+		: '';
+}
+```
+
+---
+
+```php
+foreach ($items as $i => $v) {
+	echo '<p>' . $i . ': ' . $v;
+}
+```
+
+```php
+foreach ($items as $key => $value) {
+	echo '<p>' . $key . ': ' . $value;
+}
+```
+<!-- .element: class="fragment" -->
+```php
+foreach ($items as $number => $name) {
+	echo '<p>' . $number . ': ' . $name;
+}
+```
+<!-- .element: class="fragment" -->
+
+---
+
+### #2 Keep your classes (and methods) small
+
+---
+
+### #3 One level of indentation
+
+---
 
 ```php
 function doSomethingWithTheItemList($items) {
@@ -60,11 +139,10 @@ function doSomethingWithTheItemList($items) {
 
 }
 ```
-<!-- .element: class="fragment" -->
 
 ---
 
-### #3 Do not use else
+### #4 Do not use else
 
 - Golden path	|
 
@@ -379,80 +457,3 @@ function prepareItem($item) {
 	// A lot of code;
 }
 ```
-
----
-
-### #4 Do not abbreviate
-
-<div class="align-left">
-<div><code>$val</code> => <code>$value</code></div><!-- .element: class="fragment" -->
-<div><code>$w</code>, <code>$h</code> => <code>$width</code>, <code>$height</code></div><!-- .element: class="fragment" -->
-<div><code>getArtAttrDb()</code> => <code>getArticleAttributesFromDatabase()</code></div><!-- .element: class="fragment" -->
-<code>$sp</code><!-- .element: class="fragment" -->
-<div>=> <code>$systemPlugin</code> ???</div><!-- .element: class="fragment" -->
-<div>=> <code>$serviceProvider</code> ???</div><!-- .element: class="fragment" -->
-<div>=> <code>$spain</code> ???</div><!-- .element: class="fragment" -->
-<div>=> <code>$stupidPhrase</code> ???</div><!-- .element: class="fragment" -->
-
-<div><br />Exceptions:</div><!-- .element: class="fragment" -->
-<div><code>id</code> for identifier</div><!-- .element: class="fragment" -->
-<div><code>x</code>, <code>y</code> for actual axis</div><!-- .element: class="fragment" -->
-</div>
-
----
-
-```php
-for ($yi = $skip; $yi < $n_to - $endskip; $yi++)
-{
-	$line = $to_lines[$yi];
-	if (($this->ychanged[$yi] = empty($xhash[$line])))
-	{
-		continue;
-	}
-	$yhash[$line] = 1;
-	$this->yv[] = $line;
-	$this->yind[] = $yi;
-}
-```
-
----
-```php
-if ($mr >= 0) {
-	$item->css_markups['timeframe'][]
-		= $ra_css_classes[$mr];
-
-	$item->ecss_markups['timeframe'][]
-		= ' mu_ra_timeframe'
-		. (
-			$mu_addtext_radded
-			? ' mu_has_text'
-			: ''
-		);
-
-	$item->title_markups['timeframe'][]
-		= $mu_addtext_radded
-		? $ra_timeframe_text[$mr]
-		: '';
-}
-```
-
----
-
-```php
-foreach ($items as $i => $v) {
-	echo '<p>' . $i . ': ' . $v;
-}
-```
-
-```php
-foreach ($items as $key => $value) {
-	echo '<p>' . $key . ': ' . $value;
-}
-```
-<!-- .element: class="fragment" -->
-```php
-foreach ($items as $number => $name) {
-	echo '<p>' . $number . ': ' . $name;
-}
-```
-<!-- .element: class="fragment" -->
