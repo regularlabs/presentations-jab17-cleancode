@@ -384,12 +384,15 @@ function prepareItem($item) {
 
 ### #4 Do not abbreviate
 
-- <code>val</code> => <code>value</code> |
-- <code>val</code> => <code>value</code> |
+- <code>val</code> => <code>value</code>
+<!-- .element: class="fragment" -->
+- <code>val</code> => <code>value</code>
+<!-- .element: class="fragment" -->
 
-Exceptions: |
+Exceptions:
 - <code>id</code> for identifier |
 - <code>x</code>, <code>y</code> for actual axis |
+<!-- .element: class="fragment" -->
 
 ---
 
