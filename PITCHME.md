@@ -394,7 +394,7 @@ function prepareItem($item) {
 <div>=> <code>$spain</code> ???</div><!-- .element: class="fragment" -->
 <div>=> <code>$stupidPhrase</code> ???</div><!-- .element: class="fragment" -->
 
-<div>Exceptions:</div><!-- .element: class="fragment" -->
+<div><br />Exceptions:</div><!-- .element: class="fragment" -->
 <div><code>id</code> for identifier</div><!-- .element: class="fragment" -->
 <div><code>x</code>, <code>y</code> for actual axis</div><!-- .element: class="fragment" -->
 </div>
