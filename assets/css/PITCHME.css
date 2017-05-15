@@ -32,3 +32,8 @@
 	color: dodgerblue;
     text-decoration: underline;
 }
+
+.mono {
+	font-family: monospace;
+	text-align: center;
+}

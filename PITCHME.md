@@ -76,14 +76,15 @@ function doSomethingWithTheItemList($items) {
 
 ---
 
-```
-I
-/\
--  -
-/\ /\
--  -  -  -
-/\ /\ /\ /\
-```
+<div class="mono">
+.
+/ \
+.  .
+/ \  / \
+.  .  .  .
+/ \ / \ / \ / \
+.  .  .  .  .  .  .  .
+</div>
 
 ---
 
