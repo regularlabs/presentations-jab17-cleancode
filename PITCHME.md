@@ -19,10 +19,10 @@ Thanks to
 ## Goals
 
 - Readability
-- More stable
-- Maintainabiliy
-- Better testable
-- DRYer
+- More stable	|
+- Maintainabiliy	|
+- Better testable	|
+- DRYer	|
 
 ---
 
