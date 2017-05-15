@@ -391,7 +391,11 @@ function prepareItem($item) {
 <!-- .element: class="fragment" -->
 <div><code>getAttr()</code> => <code>getAttributes()</code></div>
 <!-- .element: class="fragment" -->
-<div><span><code>$emc</code> =></span><!-- .element: class="fragment" --> <code>$errorMessageCode</code><!-- .element: class="fragment" --></div>
+<code>$sp</code><!-- .element: class="fragment" -->
+<div>=> <code>$systemPlugin</code> ???</div><!-- .element: class="fragment" -->
+<div>=> <code>$serviceProvider</code> ???</div><!-- .element: class="fragment" -->
+<div>=> <code>$spain</code> ???</div><!-- .element: class="fragment" -->
+<div>=> <code>$stupidPhrase</code> ???</div><!-- .element: class="fragment" -->
 
 Exceptions:
 <!-- .element: class="fragment" -->
