@@ -1,3 +1,7 @@
+#main_nav {
+    display: none;
+}
+
 .reveal {
     font-size: 2em;
 }
