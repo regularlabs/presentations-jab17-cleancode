@@ -386,8 +386,8 @@ function prepareItem($item) {
 
 <div class="align-left">
 <div><code>$val</code> => <code>$value</code></div><!-- .element: class="fragment" -->
-<div><code>$art</code> => <code>$article</code></div><!-- .element: class="fragment" -->
-<div><code>getAttr()</code> => <code>getAttributes()</code></div><!-- .element: class="fragment" -->
+<div><code>$w</code>, <code>$h</code> => <code>$width</code>, <code>$height</code></div><!-- .element: class="fragment" -->
+<div><code>getArtAttrDb()</code> => <code>getArticleAttributesFromDatabase()</code></div><!-- .element: class="fragment" -->
 <code>$sp</code><!-- .element: class="fragment" -->
 <div>=> <code>$systemPlugin</code> ???</div><!-- .element: class="fragment" -->
 <div>=> <code>$serviceProvider</code> ???</div><!-- .element: class="fragment" -->
