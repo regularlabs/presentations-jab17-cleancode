@@ -66,26 +66,57 @@ function doSomethingWithTheItemList($items) {
 
 ### #3 Do not use else
 
-- No else after return |
+- Golden path	|
+- No else after return	|
 
 ---
-
-### #3 Do not use else
 
 ```
 function checkPublished($article) {
 
-	if ( ! $article->published) {
-		return 'No, not published';
-	} else {
+	if ( $article->published) {
 		return 'Yes, it is published';
+	} else {
+		return 'No, not published';
 	}
 
 }
 ```
 ---
 
+```
+function checkPublished($article) {
+
+	if ( $article->published) {
+		return 'Yes, it is published';
+	}
+
+	return 'No, not published';
+
+}
+```
+---
+
 ### #3 Do not use else
+
+- Golden path
+- No else after return
+- Defensive (negative) checks |
+
+---
+
+```
+function checkPublished($article) {
+
+	if ( $article->published) {
+		return 'Yes, it is published';
+	}
+
+	return 'No, not published';
+
+}
+```
+---
 
 ```
 function checkPublished($article) {
@@ -102,13 +133,12 @@ function checkPublished($article) {
 
 ### #3 Do not use else
 
+- Golden path
 - No else after return
+- Defensive (negative) checks
 - Return early |
 
 ---
-
-### #3 Do not use else
-#### Return early
 
 ```
 function checkAges($age1, $age2) {
@@ -126,9 +156,6 @@ function checkAges($age1, $age2) {
 }
 ```
 ---
-
-### #3 Do not use else
-#### Return early
 
 ```
 function checkAges($age1, $age2) {
@@ -149,11 +176,10 @@ function checkAges($age1, $age2) {
 ---
 ### #3 Do not use else
 
+- Golden path
 - No else after return
+- Defensive (negative) checks
 - Return early
-- Defensive checks (check for negative => exceptions) |
-- Golden path (main code after the checks) |
-- Move checks to a separate method (only when making sense, when expecting multiple checks) |
 - Many else-ifs => Switches |
 
 ---
@@ -230,6 +256,17 @@ function getStatusText($status) {
 
 }
 ```
+
+---
+
+### #3 Do not use else
+
+- Golden path
+- No else after return
+- Defensive (negative) checks
+- Return early
+- Many else-ifs => Switches
+- Move checks to a separate method (only when making sense, when expecting multiple checks) |
 
 ---
 
