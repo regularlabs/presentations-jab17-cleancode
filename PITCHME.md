@@ -48,14 +48,16 @@ Small steps to better code
 <div><code>$w</code>, <code>$h</code> => <code>$width</code>, <code>$height</code></div><!-- .element: class="fragment" -->
 <div><code>getArtAttrDb()</code> => <code>getArticleAttributesFromDatabase()</code></div><!-- .element: class="fragment" -->
 <code>$sp</code><!-- .element: class="fragment" -->
-<div>   => <code>$systemPlugin</code> ???</div><!-- .element: class="fragment" -->
-<div>   => <code>$serviceProvider</code> ???</div><!-- .element: class="fragment" -->
-<div>   => <code>$spain</code> ???</div><!-- .element: class="fragment" -->
-<div>   => <code>$stupidPhrase</code> ???</div><!-- .element: class="fragment" -->
+<div> &nbsp; => <code>$systemPlugin</code> ???</div><!-- .element: class="fragment" -->
+<div> &nbsp; => <code>$serviceProvider</code> ???</div><!-- .element: class="fragment" -->
+<div> &nbsp; => <code>$spain</code> ???</div><!-- .element: class="fragment" -->
+<div> &nbsp; => <code>$stupidPhrase</code> ???</div><!-- .element: class="fragment" -->
 
-<div><br />Exceptions:</div><!-- .element: class="fragment" -->
+<div><br>Exceptions:</div><!-- .element: class="fragment" -->
 <div><code>id</code> for identifier</div><!-- .element: class="fragment" -->
 <div><code>x</code>, <code>y</code> for actual axis</div><!-- .element: class="fragment" -->
+
+<div><br>Or use: <code>$x_axis</code>, <code>$y_axis</code></div><!-- .element: class="fragment" -->
 </div>
 
 ---
