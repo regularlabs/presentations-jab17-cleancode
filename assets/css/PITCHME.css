@@ -11,8 +11,8 @@
     font-size: 1em;
 }
 
-.reveal code {
-	background-color: #666;
+.reveal div > code, .reveal span > code, .reveal p > code {
+	background-color: #333;
 	border-radius: 5px;
 	padding: 5px 10px;
 }
