@@ -33,8 +33,8 @@
     text-decoration: underline;
 }
 
-.mono {
+.reveal .mono {
 	font-family: monospace;
 	text-align: center;
-	white-space: pre-wrap;
+	white-space: pre;
 }

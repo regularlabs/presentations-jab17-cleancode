@@ -79,11 +79,11 @@ function doSomethingWithTheItemList($items) {
 <div class="mono">
 .
 / \
-.  .
+.    .
 / \  / \
-.  .  .  .
-/ \ / \ / \ / \
-.  .  .  .  .  .  .  .
+.    .    .    .
+/ \ / \     / \
+.  .  .  .        .  .
 </div>
 
 ---
