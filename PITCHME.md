@@ -384,6 +384,7 @@ function prepareItem($item) {
 
 ### #4 Do not abbreviate
 
+<div class="left">
 <div><code>$val</code> => <code>$value</code></div>
 <!-- .element: class="fragment" -->
 <div><code>$art</code> => <code>$article</code></div>
@@ -398,6 +399,7 @@ Exceptions:
 <!-- .element: class="fragment" -->
 <div><code>x</code>, <code>y</code> for actual axis</div>
 <!-- .element: class="fragment" -->
+</div>
 
 ---
 
