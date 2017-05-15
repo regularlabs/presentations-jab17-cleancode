@@ -84,7 +84,7 @@ function checkPublished($article) {
 ```
 ---
 
-```
+```php
 function checkPublished($article) {
 
 	if ( $article->published) {
