@@ -76,12 +76,15 @@ function doSomethingWithTheItemList($items) {
 
 ---
 
+```
 I
 /\
 -  -
 /\ /\
 -  -  -  -
 /\ /\ /\ /\
+```
+
 ---
 
 
