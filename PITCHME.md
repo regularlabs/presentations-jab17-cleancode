@@ -81,24 +81,21 @@ Exceptions:
 
 ### #4 Do not abbreviate
 
-<div class="fragment">
 ```
 foreach ($items as $i => $v) {
 	echo '<p>' . $i . ': ' . $v;
 }
 ```
-</div>
-<div class="fragment">
+<!-- .element: class="fragment" -->
 ```
 foreach ($items as $key => $value) {
 	echo '<p>' . $key . ': ' . $value;
 }
 ```
-</div>
-<div class="fragment">
+<!-- .element: class="fragment" -->
 ```
 foreach ($items as $number => $name) {
 	echo '<p>' . $number . ': ' . $name;
 }
 ```
-</div>
+<!-- .element: class="fragment" -->
