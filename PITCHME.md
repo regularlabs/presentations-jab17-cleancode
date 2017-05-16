@@ -162,30 +162,23 @@ switch ($mode) {
 						$catid      = $app->input->getInt('catid');
 
 						if (!$catid) {
-							// Get an instance of the generic article model
 							$article = JModelLegacy::getInstance('Article', 'ContentModel', array('ignore_request' => true));
 
-							$article->setState('params', $appParams);
-							$article->setState('filter.published', 1);
-							$article->setState('article.id', (int) $article_id);
 							$item   = $article->getItem();
 							$catids = array($item->catid);
 						} else {
 							$catids = array($catid);
 						}
 					} else {
-						// Return right away if show_on_article_page option is off
 						return;
 					}
 					break;
 
 				case 'featured' :
 				default:
-					// Return right away if not on the category or article views
 					return;
 			}
 		} else {
-			// Return right away if not on a com_content page
 			return;
 		}
 
