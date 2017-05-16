@@ -480,7 +480,7 @@ function addGroceries($type) {
 
 ---
 
-<div class="longcode"></div>
+<div class="smaller-code-8"></div>
 
 ```php
 function addGroceries($type) {
@@ -510,7 +510,7 @@ function prepareItem($type) {
 
 ---
 
-<div class="longcode"></div>
+<div class="smaller-code-8"></div>
 
 ```php
 function addGroceries($type) {

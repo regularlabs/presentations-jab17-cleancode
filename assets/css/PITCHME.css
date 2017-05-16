@@ -15,8 +15,14 @@
     font-size: 1em;
 }
 
-.reveal .longcode + pre {
+.reveal .smaller-code-8 + pre {
     font-size: 0.8em;
+}
+.reveal .smaller-code-6 + pre {
+    font-size: 0.6em;
+}
+.reveal .smaller-code-4 + pre {
+    font-size: 0.4em;
 }
 
 .reveal div > code, .reveal span > code, .reveal p > code {
