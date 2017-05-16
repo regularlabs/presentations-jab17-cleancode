@@ -40,9 +40,10 @@ Small steps to better code
 - D<span class="special">R</span>Yer
 
 ---
----?image=http://i.imgur.com/0LTCl8Q.gif
 
 ### #1 Do not abbreviate
+
+![IMG](assets/abbreviate.gif)
 
 ---
 
