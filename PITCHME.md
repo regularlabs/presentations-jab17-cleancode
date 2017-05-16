@@ -43,6 +43,12 @@ Small steps to better code
 
 ### #1 Do not abbreviate
 
+![IMG](http://i.imgur.com/0LTCl8Q.gif)
+
+---
+
+### #1 Do not abbreviate
+
 <div class="align-left">
 <div><code>$val</code> => <code>$value</code></div><!-- .element: class="fragment" -->
 <div><code>$w</code>, <code>$h</code> => <code>$width</code>, <code>$height</code></div><!-- .element: class="fragment" -->
