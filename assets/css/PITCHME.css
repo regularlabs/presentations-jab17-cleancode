@@ -15,7 +15,7 @@
     font-size: 1em;
 }
 
-.reveal .longcode & pre {
+.reveal .longcode + pre {
     font-size: 0.8em;
 }
 
