@@ -140,6 +140,73 @@ foreach ($items as $number => $name) {
 
 ---
 
+<div class="smaller-code-4"></div>
+
+```php
+switch ($mode)
+		{
+			case 'dynamic' :
+				$option = $app->input->get('option');
+				$view   = $app->input->get('view');
+
+				if ($option === 'com_content')
+				{
+					switch ($view)
+					{
+						case 'category' :
+							$catids = array($app->input->getInt('id'));
+							break;
+						case 'categories' :
+							$catids = array($app->input->getInt('id'));
+							break;
+						case 'article' :
+							if ($params->get('show_on_article_page', 1))
+							{
+								$article_id = $app->input->getInt('id');
+								$catid      = $app->input->getInt('catid');
+
+								if (!$catid)
+								{
+									// Get an instance of the generic article model
+									$item   = $article->getItem();
+									$catids = array($item->catid);
+								}
+								else
+								{
+									$catids = array($catid);
+								}
+							}
+							else
+							{
+								// Return right away if show_on_article_page option is off
+								return;
+							}
+							break;
+
+						case 'featured' :
+						default:
+							// Return right away if not on the category or article views
+							return;
+					}
+				}
+				else
+				{
+					// Return right away if not on a com_content page
+					return;
+				}
+
+				break;
+
+			case 'normal' :
+			default:
+				$catids = $params->get('catid');
+				$articles->setState('filter.category_id.include', (bool) $params->get('category_filtering_type', 1));
+				break;
+		}
+```
+
+---
+
 ```php
 function doSomethingWithTheItemList($items) {
 
