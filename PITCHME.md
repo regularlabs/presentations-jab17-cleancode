@@ -197,7 +197,7 @@ switch ($mode) {
 
 <div>modules/mod_articles_category/helper.php</div>
 
-<div class="smaller-code-6"></div>
+<div class="smaller-code-5"></div>
 
 ```php
 if ($catids)

@@ -21,6 +21,9 @@
 .reveal .smaller-code-6 + pre {
     font-size: 0.6em;
 }
+.reveal .smaller-code-6 + pre {
+    font-size: 0.5em;
+}
 .reveal .smaller-code-4 + pre {
     font-size: 0.4em;
 }
