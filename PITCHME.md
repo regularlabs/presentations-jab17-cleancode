@@ -143,42 +143,49 @@ foreach ($items as $number => $name) {
 <div class="smaller-code-4"></div>
 
 ```php
-switch ($mode)
-{
+switch ($mode) {
 	case 'dynamic' :
-		if ($option === 'com_content')
-		{
-			switch ($view)
-			{
+		$option = $app->input->get('option');
+		$view   = $app->input->get('view');
+
+		if ($option === 'com_content') {
+			switch ($view) {
+				case 'category' :
+					$catids = array($app->input->getInt('id'));
+					break;
+				case 'categories' :
+					$catids = array($app->input->getInt('id'));
+					break;
 				case 'article' :
-					if ($params->get('show_on_article_page', 1))
-					{
+					if ($params->get('show_on_article_page', 1)) {
 						$article_id = $app->input->getInt('id');
 						$catid      = $app->input->getInt('catid');
 
-						if (!$catid)
-						{
+						if (!$catid) {
+							// Get an instance of the generic article model
+							$article = JModelLegacy::getInstance('Article', 'ContentModel', array('ignore_request' => true));
+
+							$article->setState('params', $appParams);
+							$article->setState('filter.published', 1);
+							$article->setState('article.id', (int) $article_id);
 							$item   = $article->getItem();
 							$catids = array($item->catid);
-						}
-						else
-						{
+						} else {
 							$catids = array($catid);
 						}
-					}
-					else
-					{
+					} else {
+						// Return right away if show_on_article_page option is off
 						return;
 					}
 					break;
 
 				case 'featured' :
 				default:
+					// Return right away if not on the category or article views
 					return;
 			}
-		}
-		else
-		{
+		} else {
+			// Return right away if not on a com_content page
 			return;
 		}
 
