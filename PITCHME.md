@@ -144,52 +144,52 @@ foreach ($items as $number => $name) {
 
 ```php
 switch ($mode)
+{
+	case 'dynamic' :
+		if ($option === 'com_content')
 		{
-			case 'dynamic' :
-				if ($option === 'com_content')
-				{
-					switch ($view)
+			switch ($view)
+			{
+				case 'article' :
+					if ($params->get('show_on_article_page', 1))
 					{
-						case 'article' :
-							if ($params->get('show_on_article_page', 1))
-							{
-								$article_id = $app->input->getInt('id');
-								$catid      = $app->input->getInt('catid');
+						$article_id = $app->input->getInt('id');
+						$catid      = $app->input->getInt('catid');
 
-								if (!$catid)
-								{
-									$item   = $article->getItem();
-									$catids = array($item->catid);
-								}
-								else
-								{
-									$catids = array($catid);
-								}
-							}
-							else
-							{
-								return;
-							}
-							break;
-
-						case 'featured' :
-						default:
-							return;
+						if (!$catid)
+						{
+							$item   = $article->getItem();
+							$catids = array($item->catid);
+						}
+						else
+						{
+							$catids = array($catid);
+						}
 					}
-				}
-				else
-				{
+					else
+					{
+						return;
+					}
+					break;
+
+				case 'featured' :
+				default:
 					return;
-				}
-
-				break;
-
-			case 'normal' :
-			default:
-				$catids = $params->get('catid');
-				$articles->setState('filter.category_id.include', (bool) $params->get('category_filtering_type', 1));
-				break;
+			}
 		}
+		else
+		{
+			return;
+		}
+
+		break;
+
+	case 'normal' :
+	default:
+		$catids = $params->get('catid');
+		$articles->setState('filter.category_id.include', (bool) $params->get('category_filtering_type', 1));
+		break;
+}
 ```
 
 ---
