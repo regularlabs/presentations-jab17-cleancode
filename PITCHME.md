@@ -140,8 +140,9 @@ foreach ($items as $number => $name) {
 
 ---
 
-<div class="smaller-code-4"></div>
+modules/mod_articles_category/helper.php
 
+<div class="smaller-code-4"></div>
 ```php
 switch ($mode) {
 	case 'dynamic' :
