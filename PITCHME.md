@@ -197,7 +197,7 @@ switch ($mode) {
 
 <div>modules/mod_articles_category/helper.php</div>
 
-<div class="smaller-code-4"></div>
+<div class="smaller-code-6"></div>
 
 ```php
 if ($catids)
@@ -206,11 +206,7 @@ if ($catids)
 	{
 		// Get an instance of the generic categories model
 		$categories = JModelLegacy::getInstance('Categories', 'ContentModel', array('ignore_request' => true));
-		$categories->setState('params', $appParams);
 		$levels = $params->get('levels', 1) ?: 9999;
-		$categories->setState('filter.get_children', $levels);
-		$categories->setState('filter.published', 1);
-		$categories->setState('filter.access', $access);
 		$additional_catids = array();
 
 		foreach ($catids as $catid)
