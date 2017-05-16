@@ -19,6 +19,8 @@
 
 Small steps to better code
 
+![IMG](assets/steps.gif)
+
 ---
 
 ## Goals
@@ -128,9 +130,13 @@ foreach ($items as $number => $name) {
 
 ### #2 Keep your classes (and methods) small
 
+![IMG](assets/small.gif)
+
 ---
 
 ### #3 One level of indentation
+
+![IMG](assets/indent.gif)
 
 ---
 
@@ -147,6 +153,12 @@ function doSomethingWithTheItemList($items) {
 
 }
 ```
+
+---
+
+### #4 Do not use else
+
+![IMG](assets/else.gif)
 
 ---
 
