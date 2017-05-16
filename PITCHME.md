@@ -146,19 +146,10 @@ foreach ($items as $number => $name) {
 switch ($mode)
 		{
 			case 'dynamic' :
-				$option = $app->input->get('option');
-				$view   = $app->input->get('view');
-
 				if ($option === 'com_content')
 				{
 					switch ($view)
 					{
-						case 'category' :
-							$catids = array($app->input->getInt('id'));
-							break;
-						case 'categories' :
-							$catids = array($app->input->getInt('id'));
-							break;
 						case 'article' :
 							if ($params->get('show_on_article_page', 1))
 							{
@@ -167,7 +158,6 @@ switch ($mode)
 
 								if (!$catid)
 								{
-									// Get an instance of the generic article model
 									$item   = $article->getItem();
 									$catids = array($item->catid);
 								}
@@ -178,20 +168,17 @@ switch ($mode)
 							}
 							else
 							{
-								// Return right away if show_on_article_page option is off
 								return;
 							}
 							break;
 
 						case 'featured' :
 						default:
-							// Return right away if not on the category or article views
 							return;
 					}
 				}
 				else
 				{
-					// Return right away if not on a com_content page
 					return;
 				}
 
