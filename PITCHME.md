@@ -418,7 +418,7 @@ function getStatusText($status) {
 - Return early
 - Defensive (negative) checks
 - Many else-ifs => Switches
-- Move checks to a separate method |
+- Move code to separate methods |
 
 ---
 
@@ -457,5 +457,76 @@ function getList() {
 
 function prepareItem($item) {
 	// A lot of code;
+}
+```
+
+---
+
+```php
+function addGroceries($type) {
+
+	if ($type = 'drinks') {
+		$groceries = $this->getDrinks();
+	} else if ($type = 'fruit') {
+		$groceries = $this->getFruits();
+	} else {
+		$groceries = $this->getFood();
+	}
+
+	// Do stuff with the $groceries
+
+}
+```
+
+---
+
+```php
+function addGroceries($type) {
+
+	$groceries = $this->getGroceriesByType();
+
+	// Do stuff with the $groceries
+
+}
+
+function prepareItem($type) {
+
+	if ($type = 'drinks') {
+		return $this->getDrinks();
+	}
+
+	if ($type = 'fruit') {
+		return $this->getFruits();
+	}
+
+	return $this->getFood();
+
+}
+```
+
+---
+
+```php
+function addGroceries($type) {
+
+	$groceries = $this->getGroceriesByType();
+
+	// Do stuff with the $groceries
+
+}
+
+function prepareItem($type) {
+
+	switch ($type) {
+		case 'drinks':
+			return $this->getDrinks();
+
+		case 'fruit':
+			return $this->getFruits();
+
+		default:
+			return $this->getFood();
+	}
+
 }
 ```
