@@ -74,7 +74,7 @@ Small steps to better code
 for ($yi = $skip; $yi < $n_to - $endskip; $yi++)
 {
 	$line = $to_lines[$yi];
-	if (($this->ychanged[$yi] = empty($xhash[$line])))
+	if ($this->ychanged[$yi] = empty($xhash[$line]))
 	{
 		continue;
 	}
