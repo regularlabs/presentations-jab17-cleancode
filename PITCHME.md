@@ -205,7 +205,7 @@ if ($catids)
 	if ($params->get('show_child_category_articles', 0) && (int) $params->get('levels', 0) > 0)
 	{
 		// Get an instance of the generic categories model
-		$categories = JModelLegacy::getInstance('Categories', 'ContentModel', array('ignore_request' => true));
+		$categories = JModelLegacy::getInstance('Categories', 'ContentModel');
 		$levels = $params->get('levels', 1) ?: 9999;
 		$additional_catids = array();
 
