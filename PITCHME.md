@@ -340,84 +340,6 @@ function getList() {
 - No else after return
 - Return early
 - Defensive (negative) checks
-- Many else-ifs => Switches |
-
----
-
-```php
-function getStatusText($status) {
-
-	if ($status == -2) {
-		$result = 'Archived';
-	} else if ($status == -1) {
-		$result = 'Trashed';
-	} else if ($status == 0) {
-		$result = 'Unpublished';
-	} else {
-		$result = 'Published';
-	}
-
-	return $result;
-
-}
-```
-
----
-
-```php
-function getStatusText($status) {
-
-	if ($status == -2) {
-		return 'Archived';
-	}
-
-	if ($status == -1) {
-		return 'Trashed';
-	}
-
-	if ($status == 0) {
-		return 'Unpublished';
-	}
-
-	return 'Published';
-
-}
-```
-
----
-
-```php
-function getStatusText($status) {
-
-	switch ($status) {
-
-		case -2:
-			return 'Archived';
-
-		case -1:
-			return 'Trashed';
-
-		case 0:
-			return 'Unpublished';
-
-		case 1:
-		default:
-			return 'Published';
-
-	}
-
-}
-```
-
----
-
-### #3 Do not use else
-
-- Golden path
-- No else after return
-- Return early
-- Defensive (negative) checks
-- Many else-ifs => Switches
 - Move code to separate methods |
 
 ---
@@ -506,7 +428,44 @@ function prepareItem($type) {
 }
 ```
 
+---
 
+### #3 Do not use else
+
+- Golden path
+- No else after return
+- Return early
+- Defensive (negative) checks
+- Move code to separate methods
+- Many else-ifs => Switches |
+
+---
+
+<div class="smaller-code-8"></div>
+
+```php
+function addGroceries($type) {
+
+	$groceries = $this->getGroceriesByType();
+
+	// Do stuff with the $groceries
+
+}
+
+function prepareItem($type) {
+
+	if ($type = 'drinks') {
+		return $this->getDrinks();
+	}
+
+	if ($type = 'fruit') {
+		return $this->getFruits();
+	}
+
+	return $this->getFood();
+
+}
+```
 
 ---
 
@@ -532,6 +491,73 @@ function prepareItem($type) {
 
 		default:
 			return $this->getFood();
+	}
+
+}
+```
+
+---
+
+```php
+function getStatusText($status) {
+
+	if ($status == -2) {
+		$result = 'Archived';
+	} else if ($status == -1) {
+		$result = 'Trashed';
+	} else if ($status == 0) {
+		$result = 'Unpublished';
+	} else {
+		$result = 'Published';
+	}
+
+	return $result;
+
+}
+```
+
+---
+
+```php
+function getStatusText($status) {
+
+	if ($status == -2) {
+		return 'Archived';
+	}
+
+	if ($status == -1) {
+		return 'Trashed';
+	}
+
+	if ($status == 0) {
+		return 'Unpublished';
+	}
+
+	return 'Published';
+
+}
+```
+
+---
+
+```php
+function getStatusText($status) {
+
+	switch ($status) {
+
+		case -2:
+			return 'Archived';
+
+		case -1:
+			return 'Trashed';
+
+		case 0:
+			return 'Unpublished';
+
+		case 1:
+		default:
+			return 'Published';
+
 	}
 
 }
