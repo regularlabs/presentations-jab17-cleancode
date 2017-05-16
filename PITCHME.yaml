@@ -1,5 +1,5 @@
 theme : night
-footnote : "© 2017 Regular Labs - www.regularlabs.com - @RegularLabs               Cleaning up your code - The low hanging fruit"
+footnote : "© 2017 Regular Labs - www.regularlabs.com - @RegularLabs <span class="spacer"></span> Cleaning up your code - The low hanging fruit"
 theme-override : assets/css/PITCHME.css
 transition: fade
 mousewheel : true
