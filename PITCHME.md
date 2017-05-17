@@ -52,7 +52,7 @@ Small steps to better code
 ### #1 Do not abbreviate
 
 <div class="align-left">
-<div><code>$val</code> => <code>$value</code></div><!-- .element: class="fragment" -->
+<div><code>$val</code> => <code>$value</code></div>
 <div><code>$w</code>, <code>$h</code> => <code>$width</code>, <code>$height</code></div><!-- .element: class="fragment" -->
 <div><code>getArtAttrDb()</code> => <code>getArticleAttributesFromDatabase()</code></div><!-- .element: class="fragment" -->
 <div><code>$sp</code><!-- .element: class="fragment" -->
@@ -262,7 +262,7 @@ function doSomethingWithTheItemList($items) {
 
 ### #4 Do not use else
 
-- Golden path	|
+- Golden path
 
 ---
 
