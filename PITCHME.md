@@ -359,6 +359,64 @@ function getStatusText($status) {
 
 ---
 
+```php
+function getList() {
+
+	$items = $articles->getItems();
+
+	foreach ($items as $i => $item) {
+		if($item->published) {
+			// Do something with the $item
+		} else {
+			unset($items[$i]);
+		}
+	}
+
+}
+```
+
+---
+
+```php
+function getList() {
+
+	$items = $articles->getItems();
+
+	foreach ($items as $i => $item) {
+		if($item->published) {
+			// Do something with the $item
+
+			continue;
+		}
+
+		unset($items[$i]);
+	}
+
+}
+```
+
+---
+
+```php
+function getList() {
+
+	$items = $articles->getItems();
+
+	foreach ($items as $i => $item) {
+		if( ! $item->published) {
+			unset($items[$i]);
+
+			continue;
+		}
+
+		// Do something with the $item
+	}
+
+}
+```
+
+---
+
 ### #3 Do not use else
 
 - Golden path
@@ -628,6 +686,53 @@ function getStatusText($status) {
 	}
 
 	return $result;
+
+}
+```
+
+---
+
+```php
+function getStatusText($status) {
+
+	if ($status == -2) {
+		return 'Archived';
+	}
+
+	if ($status == -1) {
+		return 'Trashed';
+	}
+
+	if ($status == 0) {
+		return 'Unpublished';
+	}
+
+	return 'Published';
+
+}
+```
+
+---
+
+```php
+function getStatusText($status) {
+
+	switch ($status) {
+
+		case -2:
+			return 'Archived';
+
+		case -1:
+			return 'Trashed';
+
+		case 0:
+			return 'Unpublished';
+
+		case 1:
+		default:
+			return 'Published';
+
+	}
 
 }
 ```
