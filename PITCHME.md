@@ -52,18 +52,18 @@ Small steps to better code
 ### #1 Do not abbreviate
 
 <div class="align-left">
-<div><code>$val</code> => <code>$value</code></div>
-<div><code>$w</code>, <code>$h</code> => <code>$width</code>, <code>$height</code></div><!-- .element: class="fragment" -->
-<div><code>getArtAttrDb()</code> => <code>getArticleAttributesFromDatabase()</code></div><!-- .element: class="fragment" -->
-<div><code>$sp</code><!-- .element: class="fragment" -->
+<span><code>$val</code></span><span> => <code>$value</span></span><!-- .element: class="fragment" -->
+<span><code>$w</code>, <code>$h</code></span><!-- .element: class="fragment" --><span> => <code>$width</code>, <code>$height</code></span><!-- .element: class="fragment" -->
+<span><code>getArtAttrDb()</code></span><!-- .element: class="fragment" --><span> => <code>getArticleAttributesFromDatabase()</code></span><!-- .element: class="fragment" -->
+<span><code>$sp</code><!-- .element: class="fragment" -->
 <span> => <code>$systemPlugin</code> ???</span><!-- .element: class="fragment" -->
 <span><code>$serviceProvider</code> ???</span><!-- .element: class="fragment" -->
 <span><br> &nbsp; <code>$spain</code> ???</span><!-- .element: class="fragment" -->
 <span><code>$stupidPhrase</code> ???</span><!-- .element: class="fragment" -->
-</div>
-<div><br>Exceptions:</div><!-- .element: class="fragment" -->
-<div><code>id</code> for identifier</div><!-- .element: class="fragment" -->
-<div><code>x</code>, <code>y</code> for actual axis</div><!-- .element: class="fragment" -->
+</span>
+<span><br>Exceptions:</span><!-- .element: class="fragment" -->
+<span><code>id</code> for identifier</span><!-- .element: class="fragment" -->
+<span><code>x</code>, <code>y</code> for actual axis</span><!-- .element: class="fragment" -->
 
 <div><br>Or use: <code>$x_axis</code>, <code>$y_axis</code></div><!-- .element: class="fragment" -->
 </div>
