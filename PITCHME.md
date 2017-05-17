@@ -779,5 +779,5 @@ function getStatusText($status) {
 
 ### Peter van Westen
 #### Regular Labs
-#### www.regularlabs.com
+#### RegularLabs.com
 #### @RegularLabs
