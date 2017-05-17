@@ -268,6 +268,10 @@ function doSomethingWithTheItemList($items) {
 
 ---
 
+![IMG](assets/goldenpath_3.png)
+
+---
+
 ### #3 Do not use else
 
 - No else after return	|
