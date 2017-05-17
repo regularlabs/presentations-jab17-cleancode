@@ -52,7 +52,7 @@ Small steps to better code
 ### #1 Do not abbreviate
 
 <div class="align-left">
-<span><code>$val</code></span><span> => <code>$value</span></span><!-- .element: class="fragment" -->
+<span><code>$val</code></span><span> => <code>$value</code></span><!-- .element: class="fragment" -->
 <span><code>$w</code>, <code>$h</code></span><!-- .element: class="fragment" --><span> => <code>$width</code>, <code>$height</code></span><!-- .element: class="fragment" -->
 <span><code>getArtAttrDb()</code></span><!-- .element: class="fragment" --><span> => <code>getArticleAttributesFromDatabase()</code></span><!-- .element: class="fragment" -->
 <span><code>$sp</code><!-- .element: class="fragment" -->
