@@ -53,6 +53,7 @@ Small steps to better code
 
 <div class="align-left">
 <span><code>$val</code></span><span> => <code>$value</code></span><!-- .element: class="fragment" -->
+<span><code>$i</code></span><span> => <code>$key</code>, <code>$count</code></span><!-- .element: class="fragment" -->
 <span><br><code>$w</code>, <code>$h</code></span><!-- .element: class="fragment" --><span> => <code>$width</code>, <code>$height</code></span><!-- .element: class="fragment" -->
 <span><br><code>getArtAttrDb()</code></span><!-- .element: class="fragment" --><span> => <code>getArticleAttributesFromDatabase()</code></span><!-- .element: class="fragment" -->
 <span><br><code>$sp</code><!-- .element: class="fragment" -->
@@ -64,8 +65,7 @@ Small steps to better code
 <span><br><br>Exceptions:</span><!-- .element: class="fragment" -->
 <span><br><code>id</code> for identifier</span><!-- .element: class="fragment" -->
 <span><br><code>x</code>, <code>y</code> for actual axis</span><!-- .element: class="fragment" -->
-
-<div><br>Or use: <code>$x_axis</code>, <code>$y_axis</code></div><!-- .element: class="fragment" -->
+<span> => <code>x_axis</code>, <code>y_axis</code></span><!-- .element: class="fragment" -->
 </div>
 
 ---
