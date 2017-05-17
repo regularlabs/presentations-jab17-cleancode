@@ -320,7 +320,7 @@ function getStatusText($status) {
 		$result = 'Trashed';
 	} else if ($status == 0) {
 		$result = 'Unpublished';
-	} esle {
+	} else {
 		$result = 'Published';
 	}
 
