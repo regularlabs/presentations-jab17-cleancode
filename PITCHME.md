@@ -260,12 +260,6 @@ function doSomethingWithTheItemList($items) {
 
 ---
 
-### #4 Do not use else
-
-- Golden path
-
----
-
 ![IMG](assets/goldenpath_1.png)
 
 ---
@@ -276,7 +270,6 @@ function doSomethingWithTheItemList($items) {
 
 ### #3 Do not use else
 
-- Golden path
 - No else after return	|
 
 ---
@@ -311,7 +304,6 @@ function getPublishedText($article) {
 
 ### #3 Do not use else
 
-- Golden path
 - No else after return
 - Return early |
 
@@ -419,7 +411,6 @@ function getList() {
 
 ### #3 Do not use else
 
-- Golden path
 - No else after return
 - Return early
 - Defensive (negative) checks |
@@ -510,7 +501,6 @@ function getList() {
 
 ### #3 Do not use else
 
-- Golden path
 - No else after return
 - Return early
 - Defensive (negative) checks
@@ -606,7 +596,6 @@ function prepareItem($type) {
 
 ### #3 Do not use else
 
-- Golden path
 - No else after return
 - Return early
 - Defensive (negative) checks
