@@ -270,7 +270,7 @@ function doSomethingWithTheItemList($items) {
 
 ---
 
-### #3 Do not use else
+### #4 Do not use else
 
 - No else after return	|
 
@@ -304,7 +304,7 @@ function getPublishedText($article) {
 
 ---
 
-### #3 Do not use else
+### #4 Do not use else
 
 - No else after return
 - Return early |
@@ -411,7 +411,7 @@ function getList() {
 
 ---
 
-### #3 Do not use else
+### #4 Do not use else
 
 - No else after return
 - Return early
@@ -501,7 +501,7 @@ function getList() {
 
 ---
 
-### #3 Do not use else
+### #4 Do not use else
 
 - No else after return
 - Return early
@@ -596,7 +596,7 @@ function prepareItem($type) {
 
 ---
 
-### #3 Do not use else
+### #4 Do not use else
 
 - No else after return
 - Return early
