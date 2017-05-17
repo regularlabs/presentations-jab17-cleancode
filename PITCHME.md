@@ -15,9 +15,7 @@
 
 ---
 
-## Refactoring
-
-Small steps to better code
+### Small steps to better code
 
 ![IMG](assets/steps.gif)
 
