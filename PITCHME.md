@@ -53,7 +53,7 @@ Small steps to better code
 
 <div class="align-left">
 <span><code>$val</code></span><span> => <code>$value</code></span><!-- .element: class="fragment" -->
-<span><code>$i</code></span><span> => <code>$key</code>, <code>$count</code></span><!-- .element: class="fragment" -->
+<span><br><code>$i</code></span><!-- .element: class="fragment" --><span> => <code>$key</code>, <code>$count</code></span><!-- .element: class="fragment" -->
 <span><br><code>$w</code>, <code>$h</code></span><!-- .element: class="fragment" --><span> => <code>$width</code>, <code>$height</code></span><!-- .element: class="fragment" -->
 <span><br><code>getArtAttrDb()</code></span><!-- .element: class="fragment" --><span> => <code>getArticleAttributesFromDatabase()</code></span><!-- .element: class="fragment" -->
 <span><br><code>$sp</code><!-- .element: class="fragment" -->
