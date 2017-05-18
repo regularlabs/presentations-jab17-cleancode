@@ -307,7 +307,7 @@ function getPublishedText($article) {
 ### #4 Do not use else
 
 - No else after return
-- Return early |
+- Return early
 
 ---
 
@@ -415,7 +415,7 @@ function getList() {
 
 - No else after return
 - Return early
-- Defensive (negative) checks |
+- Defensive (negative) checks
 
 ---
 
@@ -506,7 +506,7 @@ function getList() {
 - No else after return
 - Return early
 - Defensive (negative) checks
-- Move code to separate methods |
+- Move code to separate methods
 
 ---
 
@@ -602,7 +602,7 @@ function prepareItem($type) {
 - Return early
 - Defensive (negative) checks
 - Move code to separate methods
-- Many else-ifs => Switches |
+- Many else-ifs => Switches
 
 ---
 
