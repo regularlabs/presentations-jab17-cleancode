@@ -30,7 +30,7 @@
 - DRYer				|
 - Speed				|
 
-<div></div>
+<p>&nbsp;</p>
 ---
 
 ## Goals
@@ -42,7 +42,7 @@
 - <span class="special">D</span>RYer
 - <span class="special">S</span>peed
 
-<div>RSMTDS</div>
+<p>RSMTDS</p>
 
 ---
 
