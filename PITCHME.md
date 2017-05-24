@@ -30,19 +30,19 @@
 - DRYer				|
 - Speed				|
 
-<span></span>
+<div></div>
 ---
 
 ## Goals
 
 - <span class="special">R</span>eadability
-- <span class="special">S</span>tability			|
-- <span class="special">M</span>aintainabiliy	|
-- <span class="special">T</span>estability		|
-- <span class="special">D</span>RYer				|
-- <span class="special">S</span>peed				|
+- <span class="special">S</span>tability
+- <span class="special">M</span>aintainabiliy
+- <span class="special">T</span>estability
+- <span class="special">D</span>RYer
+- <span class="special">S</span>peed
 
-RSMTDS
+<div>RSMTDS</div>
 
 ---
 
