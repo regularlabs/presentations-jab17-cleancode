@@ -42,17 +42,7 @@
 - <span class="special">D</span>RYer
 - <span class="special">S</span>peed
 
-<p>RSMTDS</p>
-
----
-
-## Goals
-
-- <span class="special">Re</span>adability
-- <span class="special">M</span>ore stabl<span class="special">e</span>
-- <span class="special">M</span>aintainabiliy
-- <span class="special">Be</span>tter testable
-- D<span class="special">R</span>Yer
+<p class="special">ReSMaTeDS</p>
 
 ---
 
