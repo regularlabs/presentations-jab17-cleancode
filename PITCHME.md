@@ -235,6 +235,18 @@ if ($catids)
 
 ---
 
+![IMG](assets/goldenpath_1.png)
+
+---
+
+![IMG](assets/goldenpath_2.png)
+
+---
+
+![IMG](assets/goldenpath_3.png)
+
+---
+
 ## #2 Keep 'em small
 #### classes and methods
 
@@ -265,18 +277,6 @@ function doSomethingWithTheItemList($items) {
 
 }
 ```
-
----
-
-![IMG](assets/goldenpath_1.png)
-
----
-
-![IMG](assets/goldenpath_2.png)
-
----
-
-![IMG](assets/goldenpath_3.png)
 
 ---
 
@@ -790,6 +790,13 @@ function getStatusText($status) {
 
 }
 ```
+
+---
+
+- #1 Do not abbreviate
+- #2 Keep 'em small (classes and methods)
+- #3 One level of indentation
+- #4 Do not use else
 
 ---
 
