@@ -24,8 +24,8 @@
 ## Goals
 
 - Readability
-- Stability			|
 - Maintainabiliy	|
+- Stability			|
 - Testability		|
 - DRYer				|
 - Speed				|
@@ -36,13 +36,13 @@
 ## Goals
 
 - <span class="special">R</span>eadability
-- <span class="special">S</span>tability
 - <span class="special">M</span>aintainabiliy
+- <span class="special">S</span>tability
 - <span class="special">T</span>estability
 - <span class="special">D</span>RYer
 - <span class="special">S</span>peed
 
-<p class="special">ReSMaTeDS</p>
+<p class="special">RaMoSTaDoS</p>
 
 ---
 
