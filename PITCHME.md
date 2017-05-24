@@ -240,7 +240,11 @@ if ($catids)
 function doSomethingWithTheItemList($items) {
 
 	foreach ($items as $item) {
+		// Level 1
+
 		if( ! $item->published) {
+			// Level 2
+
 			continue;
 		}
 
@@ -249,12 +253,6 @@ function doSomethingWithTheItemList($items) {
 
 }
 ```
-
----
-
-### #4 Do not use else
-
-![IMG](assets/else.gif)
 
 ---
 
@@ -272,7 +270,13 @@ function doSomethingWithTheItemList($items) {
 
 ### #4 Do not use else
 
-- No else after return	|
+![IMG](assets/else.gif)
+
+---
+
+### #4 Do not use else
+
+- No else after return
 
 ---
 
