@@ -46,13 +46,13 @@
 
 ---
 
-### #1 Do not abbreviate
+## #1 Do not abbreviate
 
 ![IMG](assets/abbreviate.gif)
 
 ---
 
-### #1 Do not abbreviate
+## #1 Do not abbreviate
 
 <div class="align-left">
 <span><code>$val</code></span><span> => <code>$value</code></span><!-- .element: class="fragment" -->
@@ -131,15 +131,9 @@ foreach ($items as $number => $name) {
 
 ---
 
-### #2 Keep your classes (and methods) small
+### Spaghetti code
 
-![IMG](assets/small.gif)
-
----
-
-### #3 One level of indentation
-
-![IMG](assets/indent.gif)
+![IMG](assets/spaghetti.gif)
 
 ---
 
@@ -241,6 +235,19 @@ if ($catids)
 
 ---
 
+## #2 Keep 'em small
+#### classes and methods
+
+![IMG](assets/small.gif)
+
+---
+
+## #3 One level of indentation
+
+![IMG](assets/indent.gif)
+
+---
+
 ```php
 function doSomethingWithTheItemList($items) {
 
@@ -273,13 +280,13 @@ function doSomethingWithTheItemList($items) {
 
 ---
 
-### #4 Do not use else
+## #4 Do not use else
 
 ![IMG](assets/else.gif)
 
 ---
 
-### #4 Do not use else
+## #4 Do not use else
 
 - No else after return
 
@@ -313,7 +320,7 @@ function getPublishedText($article) {
 
 ---
 
-### #4 Do not use else
+## #4 Do not use else
 
 - No else after return
 - Return early
@@ -420,7 +427,7 @@ function getList() {
 
 ---
 
-### #4 Do not use else
+## #4 Do not use else
 
 - No else after return
 - Return early
@@ -510,7 +517,7 @@ function getList() {
 
 ---
 
-### #4 Do not use else
+## #4 Do not use else
 
 - No else after return
 - Return early
@@ -605,7 +612,7 @@ function prepareItem($type) {
 
 ---
 
-### #4 Do not use else
+## #4 Do not use else
 
 - No else after return
 - Return early
