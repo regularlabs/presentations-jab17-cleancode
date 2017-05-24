@@ -5,6 +5,8 @@
 ## Cleaning up your code
 ### The low hanging fruit
 
+![IMG](assets/steps.gif)
+
 ---
 
 ## Thanks to
