@@ -24,10 +24,25 @@
 ## Goals
 
 - Readability
-- More stable		|
+- Stability			|
 - Maintainabiliy	|
-- Better testable	|
+- Testability		|
 - DRYer				|
+- Speed				|
+
+<span></span>
+---
+
+## Goals
+
+- <span class="special">R</span>eadability
+- <span class="special">S</span>tability			|
+- <span class="special">M</span>aintainabiliy	|
+- <span class="special">T</span>estability		|
+- <span class="special">D</span>RYer				|
+- <span class="special">S</span>peed				|
+
+RSMTDS
 
 ---
 
