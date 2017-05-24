@@ -133,7 +133,7 @@ foreach ($items as $number => $name) {
 
 ### Spaghetti code
 
-![IMG](assets/spaghetti.gif)
+![IMG](assets/spaghetti.webp)
 
 ---
 
