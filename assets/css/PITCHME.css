@@ -48,8 +48,11 @@
 
 .reveal .logo {
     margin: 0 -100% 20px;
-    padding: 20px 102%;
+    padding: 10px 102%;
 	background-color: #fff;
+}
+
+.reveal .logo img {
 	max-height: 100px;
 }
 
