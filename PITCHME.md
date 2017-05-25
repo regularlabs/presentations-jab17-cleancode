@@ -57,22 +57,22 @@
 <table>
 	<tr>
 		<td><span><code>val</code></span></td>
-		<td><span><code>value</code></span><!-- .element: class="fragment" --></td>
+		<td><span><code>value</code></span></td><!-- .element: class="fragment" -->
 	</tr>
 	<tr>
-		<td><span><code>i</code></span><!-- .element: class="fragment" --></td>
-		<td><span><code>key</code>, <code>count</code></span><!-- .element: class="fragment" --></td>
+		<td><span><code>i</code></span></td>
+		<td><span><code>key</code>, <code>count</code></span></td><!-- .element: class="fragment" -->
 	</tr><!-- .element: class="fragment" -->
 	<tr>
-		<td><span><code>w</code>, <code>h</code></span><!-- .element: class="fragment" --></td>
+		<td><span><code>w</code>, <code>h</code></span></td>
 		<td><span><code>width</code>, <code>height</code></span><!-- .element: class="fragment" --></td>
 	</tr><!-- .element: class="fragment" -->
 	<tr>
-		<td><span><code>cats</code>, <code>catid</code></span><!-- .element: class="fragment" --></td>
+		<td><span><code>cats</code>, <code>catid</code></span></td>
 		<td><span><code>categories</code>, <code>category_id</code></span><!-- .element: class="fragment" --></td>
 	</tr><!-- .element: class="fragment" -->
 	<tr>
-		<td><span><code>getArtAttrDb()</code></span><!-- .element: class="fragment" --></td>
+		<td><span><code>getArtAttrDb()</code></span></td>
 		<td><span><code>getArticleAttributesFromDatabase()</code></span><!-- .element: class="fragment" --></td>
 	</tr><!-- .element: class="fragment" -->
 	<tr>
