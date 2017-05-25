@@ -55,16 +55,16 @@
 ## #1 Do not abbreviate
 
 <div class="align-left">
-<span><code>$val</code></span><span> => <code>$value</code></span><!-- .element: class="fragment" -->
-<span><br><code>$i</code></span><!-- .element: class="fragment" --><span> => <code>$key</code>, <code>$count</code></span><!-- .element: class="fragment" -->
-<span><br><code>$w</code>, <code>$h</code></span><!-- .element: class="fragment" --><span> => <code>$width</code>, <code>$height</code></span><!-- .element: class="fragment" -->
-<span><br><code>$cats</code>, <code>$catid</code></span><!-- .element: class="fragment" --><span> => <code>$categories</code>, <code>$category_id</code></span><!-- .element: class="fragment" -->
+<span><code>val</code></span><span> => <code>value</code></span><!-- .element: class="fragment" -->
+<span><br><code>i</code></span><!-- .element: class="fragment" --><span> => <code>key</code>, <code>count</code></span><!-- .element: class="fragment" -->
+<span><br><code>w</code>, <code>h</code></span><!-- .element: class="fragment" --><span> => <code>width</code>, <code>height</code></span><!-- .element: class="fragment" -->
+<span><br><code>cats</code>, <code>catid</code></span><!-- .element: class="fragment" --><span> => <code>categories</code>, <code>category_id</code></span><!-- .element: class="fragment" -->
 <span><br><code>getArtAttrDb()</code></span><!-- .element: class="fragment" --><span> => <code>getArticleAttributesFromDatabase()</code></span><!-- .element: class="fragment" -->
-<span><br><code>$sp</code><!-- .element: class="fragment" -->
-<span> => <code>$systemPlugin</code> ???</span><!-- .element: class="fragment" -->
-<span><code>$serviceProvider</code> ???</span><!-- .element: class="fragment" -->
-<span><br> &nbsp; <code>$spain</code> ???</span><!-- .element: class="fragment" -->
-<span><code>$stupidPhrase</code> ???</span><!-- .element: class="fragment" -->
+<span><br><code>sp</code><!-- .element: class="fragment" -->
+<span> => <code>systemPlugin</code> ???</span><!-- .element: class="fragment" -->
+<span><code>serviceProvider</code> ???</span><!-- .element: class="fragment" -->
+<span><br> &nbsp; <code>spain</code> ???</span><!-- .element: class="fragment" -->
+<span><code>stupidPhrase</code> ???</span><!-- .element: class="fragment" -->
 </span>
 <span><br><br>Exceptions:</span><!-- .element: class="fragment" -->
 <span><br><code>id</code> for identifier</span><!-- .element: class="fragment" -->
