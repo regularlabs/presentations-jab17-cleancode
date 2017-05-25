@@ -54,10 +54,16 @@
 
 ## #1 Do not abbreviate
 
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
-
+<table>
+<tr>
+<td><span><code>val</code></span><span></td>
+<td><span><code>value</code></span><!-- .element: class="fragment" --></td>
+</tr>
+<tr>
+<td><span><code>i</code></span><span></td>
+<td><span><code>key</code>, <code>count</code></span><!-- .element: class="fragment" --></td>
+</tr>
+</table>
 <div class="align-left">
 <span><code>val</code></span><span> => <code>value</code></span><!-- .element: class="fragment" -->
 <span><br><code>i</code></span><!-- .element: class="fragment" --><span> => <code>key</code>, <code>count</code></span><!-- .element: class="fragment" -->
