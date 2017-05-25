@@ -609,7 +609,7 @@ function addGroceries($type) {
 ```php
 function addGroceries($type) {
 
-	$groceries = $this->getGroceriesByType();
+	$groceries = $this->getGroceriesByType($type);
 
 	// Do stuff with the $groceries
 
