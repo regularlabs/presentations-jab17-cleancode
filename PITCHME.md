@@ -72,11 +72,11 @@
 		<td><span><code>categories</code>, <code>category_id</code></span><!-- .element: class="fragment" --></td>
 	</tr>
 	<tr>
-		<td><span><code>getArtAttrDb()</code></span>><!-- .element: class="fragment" --></td>
+		<td><span><code>getArtAttrDb()</code></span><!-- .element: class="fragment" --></td>
 		<td><span><code>getArticleAttributesFromDatabase()</code></span><!-- .element: class="fragment" --></td>
 	</tr>
 	<tr>
-		<td><span><code>sp</code></span>></td>
+		<td><span><code>sp</code></span></td>
 		<td>
 			<span><code>systemPlugin</code> ???</span><!-- .element: class="fragment" -->
 			<span><br><code>serviceProvider</code> ???</span><!-- .element: class="fragment" -->
