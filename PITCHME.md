@@ -280,6 +280,12 @@ function doSomethingWithTheItemList($items) {
 
 ---
 
+## #4 Do not use Elsa
+
+![IMG](assets/else.gif)
+
+---
+
 ## #4 Do not use else
 
 ![IMG](assets/else.gif)
