@@ -785,7 +785,7 @@ function getStatusText($status) {
 
 ---
 
-1. Do not abbreviate
+1. Do not abbr.
 2. Keep 'em small (classes and methods)
 3. One level of indentation
 4. Do not use else
