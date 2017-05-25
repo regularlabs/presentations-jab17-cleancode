@@ -64,30 +64,34 @@
 		<td><span><code>key</code>, <code>count</code></span><!-- .element: class="fragment" --></td>
 	</tr>
 	<tr>
-		<td><span><code>w</code>, <code>h</code><span><!-- .element: class="fragment" --></td>
+		<td><span><code>w</code>, <code>h</code></span><!-- .element: class="fragment" --></td>
 		<td><span><code>width</code>, <code>height</code></span><!-- .element: class="fragment" --></td>
 	</tr>
 	<tr>
-		<td><span><code>cats</code>, <code>catid</code><span><!-- .element: class="fragment" --></td>
+		<td><span><code>cats</code>, <code>catid</code></span><!-- .element: class="fragment" --></td>
 		<td><span><code>categories</code>, <code>category_id</code></span><!-- .element: class="fragment" --></td>
 	</tr>
 	<tr>
-		<td><span><code>getArtAttrDb()</code></span><span><!-- .element: class="fragment" --></td>
+		<td><span><code>getArtAttrDb()</code></span>><!-- .element: class="fragment" --></td>
 		<td><span><code>getArticleAttributesFromDatabase()</code></span><!-- .element: class="fragment" --></td>
 	</tr>
 	<tr>
-		<td><span><code>sp</code></span><span><!-- .element: class="fragment" --></td>
+		<td><span><code>sp</code></span>></td>
 		<td>
 			<span><code>systemPlugin</code> ???</span><!-- .element: class="fragment" -->
-			<span><code>serviceProvider</code> ???</span><!-- .element: class="fragment" -->
+			<span><br><code>serviceProvider</code> ???</span><!-- .element: class="fragment" -->
 			<span><br><code>spain</code> ???</span><!-- .element: class="fragment" -->
-			<span><code>stupidPhrase</code> ???</span><!-- .element: class="fragment" -->
+			<span><br><code>stupidPhrase</code> ???</span><!-- .element: class="fragment" -->
 		</td>
-	</tr>
+	</tr><!-- .element: class="fragment" -->
 </table>
-<div class="align-left">
-<span><br><br>Exceptions:</span><!-- .element: class="fragment" -->
-<span><br><code>id</code> for identifier</span><!-- .element: class="fragment" -->
+
+---
+
+## #1 Do not abbreviate
+#### Exceptions
+
+<span><code>id</code> for identifier</span><!-- .element: class="fragment" -->
 <span><br><code>x</code>, <code>y</code> for actual axis</span><!-- .element: class="fragment" -->
 <span> => <code>x_axis</code>, <code>y_axis</code></span><!-- .element: class="fragment" -->
 </div>
