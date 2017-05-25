@@ -785,53 +785,6 @@ function getStatusText($status) {
 
 ---
 
-```php
-function getStatusText($status) {
-
-	if ($status == -2) {
-		return 'Archived';
-	}
-
-	if ($status == -1) {
-		return 'Trashed';
-	}
-
-	if ($status == 0) {
-		return 'Unpublished';
-	}
-
-	return 'Published';
-
-}
-```
-
----
-
-```php
-function getStatusText($status) {
-
-	switch ($status) {
-
-		case -2:
-			return 'Archived';
-
-		case -1:
-			return 'Trashed';
-
-		case 0:
-			return 'Unpublished';
-
-		case 1:
-		default:
-			return 'Published';
-
-	}
-
-}
-```
-
----
-
 1. Do not abbreviate
 2. Keep 'em small (classes and methods)
 3. One level of indentation
