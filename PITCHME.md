@@ -696,6 +696,25 @@ function getStatusText($status) {
 
 }
 ```
+---
+
+```php
+function getStatusText($status) {
+
+	if ($status == -2) {
+		return 'Archived';
+	} else if ($status == -1) {
+		return 'Trashed';
+	} else if ($status == 0) {
+		return 'Unpublished';
+	} else {
+		return 'Published';
+	}
+
+	// Should never happen...
+
+}
+```
 
 ---
 
