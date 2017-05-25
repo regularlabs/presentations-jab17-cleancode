@@ -91,11 +91,9 @@
 ## #1 Do not abbreviate
 ### Exceptions
 
-<div class="align-left">
 <span><code>id</code> for identifier</span><!-- .element: class="fragment" -->
 <span><br><code>x</code>, <code>y</code> for actual axis</span><!-- .element: class="fragment" -->
 <span><br><code>x_axis</code>, <code>y_axis</code></span><!-- .element: class="fragment" -->
-</div>
 
 ---
 
