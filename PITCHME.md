@@ -615,7 +615,7 @@ function addGroceries($type) {
 
 }
 
-function prepareItem($type) {
+function getGroceriesByType($type) {
 
 	if ($type = 'drinks') {
 		return $this->getDrinks();
