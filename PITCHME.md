@@ -56,27 +56,27 @@
 
 <table>
 	<tr>
-		<td><code>val</code></td>
+		<td><span><code>val</code></span></td>
 		<td><span><code>value</code></span><!-- .element: class="fragment" --></td>
 	</tr>
 	<tr>
-		<td><code>i</code></td>
+		<td><span><code>i</code></span></td>
 		<td><span><code>key</code>, <code>count</code></span><!-- .element: class="fragment" --></td>
 	</tr><!-- .element: class="fragment" -->
 	<tr>
-		<td><code>w</code>, <code>h</code></td>
+		<td><span><code>w</code>, <code>h</code></span></td>
 		<td><span><code>width</code>, <code>height</code></span><!-- .element: class="fragment" --></td>
 	</tr><!-- .element: class="fragment" -->
 	<tr>
-		<td><code>cats</code>, <code>catid</code></td>
+		<td><span><code>cats</code>, <code>catid</code></span></td>
 		<td><span><code>categories</code>, <code>category_id</code></span><!-- .element: class="fragment" --></td>
 	</tr><!-- .element: class="fragment" -->
 	<tr>
-		<td><code>getArtAttrDb()</code></td>
+		<td><span><code>getArtAttrDb()</code></span></td>
 		<td><span><code>getArticleAttributesFromDatabase()</code></span><!-- .element: class="fragment" --></td>
 	</tr><!-- .element: class="fragment" -->
 	<tr>
-		<td><code>sp</code></td>
+		<td><span><code>sp</code></span></td>
 		<td>
 			<span><code>systemPlugin</code> ???</span><!-- .element: class="fragment" -->
 			<span><br><code>serviceProvider</code> ???</span><!-- .element: class="fragment" -->
