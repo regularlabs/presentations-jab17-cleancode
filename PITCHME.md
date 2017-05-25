@@ -123,7 +123,7 @@ foreach ($items as $key => $value) {
 ```
 <!-- .element: class="fragment" -->
 ```php
-foreach ($items as $number => $name) {
+foreach ($cats as $number => $name) {
 	echo '<p>' . $number . ': ' . $name;
 }
 ```
