@@ -1,0 +1,80 @@
+.reveal .controls {
+    display: none !important;
+}
+
+.reveal {
+    font-size: 2em;
+}
+
+.reveal, .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    font-family: Oxygen,Arial;
+    letter-spacing: 0;
+}
+
+.reveal pre {
+    font-size: 1em;
+}
+
+.reveal .smaller-code-8 + pre {
+    font-size: 0.8em;
+}
+.reveal .smaller-code-6 + pre {
+    font-size: 0.6em;
+}
+.reveal .smaller-code-5 + pre {
+    font-size: 0.5em;
+}
+.reveal .smaller-code-4 + pre {
+    font-size: 0.4em;
+}
+
+.reveal div > code, .reveal span > code, .reveal p > code {
+	background-color: #333;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+
+.reveal pre code {
+	max-height: none;
+	padding: 5px 20px;
+	border-radius: 5px;
+}
+
+.reveal.center section img {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.reveal .logo {
+    margin: 0 -100% 20px;
+    padding: 20px 102%;
+	background-color: #fff;
+}
+
+.reveal .special {
+	color: dodgerblue;
+    text-decoration: underline;
+}
+
+.reveal .mono {
+	font-family: monospace;
+	text-align: center;
+	white-space: pre;
+}
+
+.reveal .align-left {
+	text-align: left;
+	display: inline-block;
+}
+
+.reveal .gray {
+	color: #999;
+}
+
+body > div:first-child {
+	width: 100%;
+    margin-left: -20px;
+    padding: 0 20px;
+    text-align: center;
+}

@@ -1,2 +1,5 @@
-logo : https://www.regularlabs.com/images/regularlabs/logo_48.png
-footnote : "© 2017 Regular Labs - www.regularlabs.com - @RegularLabs"
+theme : night
+footnote : "© 2017 Regular Labs - RegularLabs.com - @RegularLabs - CLEANING UP YOUR CODE"
+theme-override : assets/css/PITCHME.css
+transition: fade
+mousewheel : true
