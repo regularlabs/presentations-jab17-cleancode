@@ -822,7 +822,9 @@ function getStatusText($status) {
 
 ---
 
-### gitpitch.com / regularlabs / presentations-jab17-cleancode
+### regl.io / cleancode
+
+gitpitch.com / regularlabs / presentations-jab17-cleancode
 
 ---
 
