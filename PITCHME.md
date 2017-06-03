@@ -23,7 +23,7 @@
 
 ## Goals
 
-- Readability
+- Readability		|
 - Maintainabiliy	|
 - Stability			|
 - Testability		|
@@ -819,6 +819,12 @@ function getStatusText($status) {
 2. Keep 'em small (classes and methods)
 3. One level of indentation
 4. Do not use else
+
+---
+
+### regl.io / cleancode
+
+gitpitch.com / regularlabs / presentations-jab17-cleancode
 
 ---
 
